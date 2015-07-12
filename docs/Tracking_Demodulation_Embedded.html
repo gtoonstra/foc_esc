@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class=" js no-touch no-ie8compat" lang="en"><!--<![endif]--><!-- UTEIIS01 --><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/ico" href="http://www.embedded.com/images/embedded/favicon.ico">
+    <meta name="pagecaching" content="217">
+	<meta name="server_addr" content="192.155.49.95">
+	
+	<script src="Tracking_Demodulation_Embedded_files/insight.js" async="" type="text/javascript"></script><script src="Tracking_Demodulation_Embedded_files/vXhNDLnX1CtX07Kf4sAFw.js" async="" type="text/javascript"></script><script src="Tracking_Demodulation_Embedded_files/ga.js" async="" type="text/javascript"></script><script src="Tracking_Demodulation_Embedded_files/all.js" id="facebook-jssdk"></script><script src="Tracking_Demodulation_Embedded_files/jquery.js" type="text/javascript"></script>
+    
+	
+	<title>Tracking Demodulation | Embedded</title><meta property="og:title" content="Tracking Demodulation">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://www.embedded.com/electronics-blogs/spectra/4023287/Tracking-Demodulation">
+<meta property="og:image" content="http://www.embedded.com/content/images/icons/contentitem-default.png">
+<meta property="og:site_name" content="Embedded">
+<meta property="og:description" content="Embedded.com is a leading source for reliable Embedded Systems development articles, tech papers, webinars, courses, products, and tools. Visit Embedded.com for the latest  information on Embedded Development industries, insights, and educational resources.">
+<meta property="fb:admins" content="337533009670734">
+<meta name="description" content="Embedded.com is a leading source for reliable Embedded Systems development articles, tech papers, webinars, courses, products, and tools. Visit Embedded.com for the latest  information on Embedded Development industries, insights, and educational resources.">
+<meta name="Headline" content="Tracking Demodulation">
+<meta name="news_keywords" content="Embedded">
+<meta name="author" content="Don Morgan">
+<meta name="created" content="February 26, 2001">
+<meta name="original-source" content="http://www.embedded.com/electronics-blogs/spectra/4023287/Tracking-Demodulation"><link href="http://www.embedded.com/electronics-blogs/spectra/4023287/Tracking-Demodulation" rel="canonical">
+<link href="Tracking_Demodulation_Embedded_files/twlightbox.css" media="screen" rel="stylesheet" type="text/css"><script type="text/javascript" src="Tracking_Demodulation_Embedded_files/lightbox.js"></script>
+<script type="text/javascript" src="Tracking_Demodulation_Embedded_files/nextgen.js"></script>
+<script type="text/javascript" src="Tracking_Demodulation_Embedded_files/checkauth.js"></script><!-- Start: GPT Sync -->
+<script type="text/javascript">
+ var gptadslots=[];
+ (function(){
+  var useSSL = 'https:' == document.location.protocol;
+  var src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+  document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+ })();
+</script><script src="Tracking_Demodulation_Embedded_files/gpt.js"></script><iframe class="lrtqemmlponvxngsfwic" style="visibility: hidden; display: none;" src="Tracking_Demodulation_Embedded_files/container.html"></iframe>
+
+<script type="text/javascript">
+
+
+ googletag.pubads().setTargeting('kw',['insights_posting','Mechatronics','SystemDesignTools','DSP','SoftwareHardwareDevelopment','','4023287']);
+ googletag.pubads().setTargeting('aid',['4023287']);
+			if (document.documentElement.clientWidth > 767){
+			gptadslots[1]=googletag.defineSlot('/2441/emd/insights',[[2,2]],'div-gpt-ad-942957474691236830-1')
+.addService(googletag.pubads())
+.setTargeting('pos',['welcome']);
+			}
+						if (document.documentElement.clientWidth > 1027){
+			gptadslots[2]=googletag.defineSlot('/2441/emd/insights',[[1,2]],'div-gpt-ad-942957474691236830-2')
+.addService(googletag.pubads())
+.setTargeting('pos',['wallpaper']);
+			}
+						if (document.documentElement.clientWidth > 767){
+			gptadslots[3]=googletag.defineSlot('/2441/emd/insights',[[728,90],[970,250]],'div-gpt-ad-942957474691236830-3')
+.addService(googletag.pubads())
+.setTargeting('pos',['top']);
+			}
+			gptadslots[4]=googletag.defineSlot('/2441/emd/insights',[[300,250],[300,600],[336,280],[336,850]],'div-gpt-ad-942957474691236830-4')
+.addService(googletag.pubads())
+.setTargeting('pos',['rec1']);
+gptadslots[5]=googletag.defineSlot('/2441/emd/insights',[[300,250],[300,600],[336,280],[336,850]],'div-gpt-ad-942957474691236830-5')
+.addService(googletag.pubads())
+.setTargeting('pos',['rec2']);
+gptadslots[21]=googletag.defineSlot('/2441/emd/insights',[[336,90]],'div-gpt-ad-942957474691236830-21')
+.addService(googletag.pubads())
+.setTargeting('pos',['Promo1']);
+gptadslots[37]=googletag.defineSlot('/2441/emd/insights',[[1,1]],'div-gpt-ad-942957474691236830-37')
+.addService(googletag.pubads())
+.setTargeting('pos',['KnowledgeCenter1']);
+gptadslots[38]=googletag.defineSlot('/2441/emd/insights',[[1,1]],'div-gpt-ad-942957474691236830-38')
+.addService(googletag.pubads())
+.setTargeting('pos',['KnowledgeCenter2']);
+gptadslots[39]=googletag.defineSlot('/2441/emd/insights',[[1,1]],'div-gpt-ad-942957474691236830-39')
+.addService(googletag.pubads())
+.setTargeting('pos',['KnowledgeCenter3']);
+gptadslots[40]=googletag.defineSlot('/2441/emd/insights',[[1,1]],'div-gpt-ad-942957474691236830-40')
+.addService(googletag.pubads())
+.setTargeting('pos',['KnowledgeCenter4']);
+gptadslots[41]=googletag.defineSlot('/2441/emd/insights',[[1,1]],'div-gpt-ad-942957474691236830-41')
+.addService(googletag.pubads())
+.setTargeting('pos',['KnowledgeCenter5']);
+gptadslots[42]=googletag.defineSlot('/2441/emd/insights',[[4,4]],'div-gpt-ad-942957474691236830-42')
+.addService(googletag.pubads())
+.setTargeting('pos',['video']);
+googletag.pubads().enableSingleRequest();
+googletag.pubads().enableSyncRendering();
+googletag.enableServices();
+</script><script type="text/javascript" src="Tracking_Demodulation_Embedded_files/pubads_impl_52.js"></script>
+     <script type="text/javascript" src="Tracking_Demodulation_Embedded_files/jHtmlArea-0.js"></script>
+    <script src="Tracking_Demodulation_Embedded_files/modernizr.js" type="text/javascript"></script>
+    <script src="Tracking_Demodulation_Embedded_files/BrightcoveExperiences.js" type="text/javascript"></script>
+    <script type="text/javascript" src="Tracking_Demodulation_Embedded_files/contentgating.js"></script>
+    
+    <link href="Tracking_Demodulation_Embedded_files/socialfeed.css" rel="stylesheet" type="text/css">
+	<link href="Tracking_Demodulation_Embedded_files/css.css" rel="stylesheet" type="text/css">
+	<link href="Tracking_Demodulation_Embedded_files/jquery-ui.css" rel="stylesheet" type="text/css">
+	<link href="Tracking_Demodulation_Embedded_files/global.css" rel="stylesheet" type="text/css">
+	<link href="Tracking_Demodulation_Embedded_files/lightbox.css" rel="stylesheet" type="text/css">
+	<link href="Tracking_Demodulation_Embedded_files/lightbox-embedded.css" rel="stylesheet" type="text/css">
+	<link href="Tracking_Demodulation_Embedded_files/app.css" rel="stylesheet" type="text/css">
+	<link href="Tracking_Demodulation_Embedded_files/start-up.css" rel="stylesheet" type="text/css">
+	<link href="Tracking_Demodulation_Embedded_files/registration.css" rel="stylesheet" type="text/css">
+		
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="/css/embedded/ie.css">
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script> /* break us out of any containing iframes */if (top != self) { top.location.replace(self.location.href); }</script>
+	<script type="text/javascript">
+		var _doubleclickRand = Math.random() * 10000000000000000;
+	</script>   
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			_listService.applyListing();
+			initCalendar();
+			//$("a[alt^='prettyPhoto']").each(function(){ $(this).attr('href', $(this).attr('href').replace(/returnurl=&/gi,'returnUrl=' + encodeURIComponent(window.location) + '&')); });
+			//$("a[alt^='prettyPhoto']").prettyPhoto({ social_tools: false });
+		});
+	</script>
+	    <!-- Start Visual Website Optimizer Asynchronous Code -->
+<script type="text/javascript">
+var _vwo_code=(function(){
+var account_id=32069,
+settings_tolerance=2000,
+library_tolerance=2500,
+use_existing_jquery=false,
+// DO NOT EDIT BELOW THIS LINE
+f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+</script><script type="text/javascript" src="Tracking_Demodulation_Embedded_files/j.js"></script>
+<!-- End Visual Website Optimizer Asynchronous Code -->
+ <script type="text/javascript">
+    var _elqQ = _elqQ || []; _elqQ.push(['elqSetSiteId', '657486201']);
+    _elqQ.push(['elqTrackPageView']);
+    (function () {
+        function async_load() {
+            var s = document.createElement('script'); s.type = 'text/javascript';
+            s.async = true; s.src = '//img.en25.com/i/elqCfg.min.js';
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        }
+        if (window.addEventListener) window.addEventListener('DOMContentLoaded', async_load, false);
+        else if (window.attachEvent) window.attachEvent('onload', async_load);
+    })();
+</script>
+<style media="screen" type="text/css">.uv-icon{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:inline-block;cursor:pointer;position:relative;-webkit-transition:all 300ms;-moz-transition:all 300ms;-o-transition:all 300ms;transition:all 300ms;width:39px;height:39px;position:fixed;z-index:100002;opacity:0.8;-webkit-transition:opacity 100ms;-moz-transition:opacity 100ms;-o-transition:opacity 100ms;transition:opacity 100ms}.uv-icon.uv-bottom-right{bottom:10px;right:12px}.uv-icon.uv-top-right{top:10px;right:12px}.uv-icon.uv-bottom-left{bottom:10px;left:12px}.uv-icon.uv-top-left{top:10px;left:12px}.uv-icon.uv-is-selected{opacity:1}.uv-icon svg{width:39px;height:39px}.uv-popover{font-family:sans-serif;font-weight:100;font-size:13px;color:black;position:fixed;z-index:100001}.uv-popover-content{-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;-o-border-radius:5px;border-radius:5px;background:white;position:relative;width:325px;height:325px;-webkit-transition:background 200ms;-moz-transition:background 200ms;-o-transition:background 200ms;transition:background 200ms}.uv-bottom .uv-popover-content{-webkit-box-shadow:rgba(0,0,0,0.3) 0 -10px 60px,rgba(0,0,0,0.1) 0 0 20px;-moz-box-shadow:rgba(0,0,0,0.3) 0 -10px 60px,rgba(0,0,0,0.1) 0 0 20px;box-shadow:rgba(0,0,0,0.3) 0 -10px 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-top .uv-popover-content{-webkit-box-shadow:rgba(0,0,0,0.3) 0 10px 60px,rgba(0,0,0,0.1) 0 0 20px;-moz-box-shadow:rgba(0,0,0,0.3) 0 10px 60px,rgba(0,0,0,0.1) 0 0 20px;box-shadow:rgba(0,0,0,0.3) 0 10px 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-left .uv-popover-content{-webkit-box-shadow:rgba(0,0,0,0.3) 10px 0 60px,rgba(0,0,0,0.1) 0 0 20px;-moz-box-shadow:rgba(0,0,0,0.3) 10px 0 60px,rgba(0,0,0,0.1) 0 0 20px;box-shadow:rgba(0,0,0,0.3) 10px 0 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-right .uv-popover-content{-webkit-box-shadow:rgba(0,0,0,0.3) -10px 0 60px,rgba(0,0,0,0.1) 0 0 20px;-moz-box-shadow:rgba(0,0,0,0.3) -10px 0 60px,rgba(0,0,0,0.1) 0 0 20px;box-shadow:rgba(0,0,0,0.3) -10px 0 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-ie8 .uv-popover-content{position:relative}.uv-ie8 .uv-popover-content .uv-popover-content-shadow{display:block;background:black;content:'';position:absolute;left:-15px;top:-15px;width:100%;height:100%;filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius=15,MakeShadow=true,ShadowOpacity=0.30);z-index:-1}.uv-popover-tail{border:9px solid transparent;width:0;z-index:10;position:absolute;-webkit-transition:border-top-color 200ms;-moz-transition:border-top-color 200ms;-o-transition:border-top-color 200ms;transition:border-top-color 200ms}.uv-top .uv-popover-tail{bottom:-20px;border-top:11px solid white}.uv-bottom .uv-popover-tail{top:-20px;border-bottom:11px solid white}.uv-left .uv-popover-tail{right:-20px;border-left:11px solid white}.uv-right .uv-popover-tail{left:-20px;border-right:11px solid white}.uv-popover-loading{background:white;-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;-o-border-radius:5px;border-radius:5px;position:absolute;width:100%;height:100%;left:0;top:0}.uv-popover-loading-text{position:absolute;top:50%;margin-top:-0.5em;width:100%;text-align:center}.uv-popover-iframe-container{height:100%}.uv-popover-iframe{-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;-o-border-radius:5px;border-radius:5px;overflow:hidden}.uv-is-hidden{display:none}.uv-is-invisible{display:block !important;visibility:hidden !important}.uv-is-transitioning{display:block !important}.uv-no-transition{-moz-transition:none !important;-webkit-transition:none !important;-o-transition:color 0 ease-in !important;transition:none !important}.uv-fade{opacity:1;-webkit-transition:opacity 200ms ease-out;-moz-transition:opacity 200ms ease-out;-o-transition:opacity 200ms ease-out;transition:opacity 200ms ease-out}.uv-fade.uv-is-hidden{opacity:0}.uv-scale-top,.uv-scale-top-left,.uv-scale-top-right,.uv-scale-bottom,.uv-scale-bottom-left,.uv-scale-bottom-right,.uv-scale-right,.uv-scale-right-top,.uv-scale-right-bottom,.uv-scale-left,.uv-scale-left-top,.uv-scale-left-bottom,.uv-slide-top,.uv-slide-bottom,.uv-slide-left,.uv-slide-right{opacity:1;-webkit-transition:all 80ms ease-out;-moz-transition:all 80ms ease-out;-o-transition:all 80ms ease-out;transition:all 80ms ease-out}.uv-scale-top.uv-is-hidden{opacity:0;-webkit-transform:scale(0.8) translateY(-15%);-moz-transform:scale(0.8) translateY(-15%);-ms-transform:scale(0.8) translateY(-15%);-o-transform:scale(0.8) translateY(-15%);transform:scale(0.8) translateY(-15%)}.uv-scale-top-left.uv-is-hidden{opacity:0;-webkit-transform:scale(0.8) translateY(-15%) translateX(-10%);-moz-transform:scale(0.8) translateY(-15%) translateX(-10%);-ms-transform:scale(0.8) translateY(-15%) translateX(-10%);-o-transform:scale(0.8) translateY(-15%) translateX(-10%);transform:scale(0.8) translateY(-15%) translateX(-10%)}.uv-scale-top-right.uv-is-hidden{opacity:0;-webkit-transform:scale(0.8) translateY(-15%) translateX(10%);-moz-transform:scale(0.8) translateY(-15%) translateX(10%);-ms-transform:scale(0.8) translateY(-15%) translateX(10%);-o-transform:scale(0.8) translateY(-15%) translateX(10%);transform:scale(0.8) translateY(-15%) translateX(10%)}.uv-scale-bottom.uv-is-hidden{opacity:0;-webkit-transform:scale(0.8) translateY(15%);-moz-transform:scale(0.8) translateY(15%);-ms-transform:scale(0.8) translateY(15%);-o-transform:scale(0.8) translateY(15%);transform:scale(0.8) translateY(15%)}.uv-scale-bottom-left.uv-is-hidden{opacity:0;-webkit-transform:scale(0.8) translateY(15%) translateX(-10%);-moz-transform:scale(0.8) translateY(15%) translateX(-10%);-ms-transform:scale(0.8) translateY(15%) translateX(-10%);-o-transform:scale(0.8) translateY(15%) translateX(-10%);transform:scale(0.8) translateY(15%) translateX(-10%)}.uv-scale-bottom-right.uv-is-hidden{opacity:0;-webkit-transform:scale(0.8) translateY(15%) translateX(10%);-moz-transform:scale(0.8) translateY(15%) translateX(10%);-ms-transform:scale(0.8) translateY(15%) translateX(10%);-o-transform:scale(0.8) translateY(15%) translateX(10%);transform:scale(0.8) translateY(15%) translateX(10%)}.uv-scale-right.uv-is-hidden{opacity:0;-webkit-transform:scale(0.8) translateX(15%);-moz-transform:scale(0.8) translateX(15%);-ms-transform:scale(0.8) translateX(15%);-o-transform:scale(0.8) translateX(15%);transform:scale(0.8) translateX(15%)}.uv-scale-right-top.uv-is-hidden{opacity:0;-webkit-transform:scale(0.8) translateX(15%) translateY(-10%);-moz-transform:scale(0.8) translateX(15%) translateY(-10%);-ms-transform:scale(0.8) translateX(15%) translateY(-10%);-o-transform:scale(0.8) translateX(15%) translateY(-10%);transform:scale(0.8) translateX(15%) translateY(-10%)}.uv-scale-right-bottom.uv-is-hidden{opacity:0;-webkit-transform:scale(0.8) translateX(15%) translateY(10%);-moz-transform:scale(0.8) translateX(15%) translateY(10%);-ms-transform:scale(0.8) translateX(15%) translateY(10%);-o-transform:scale(0.8) translateX(15%) translateY(10%);transform:scale(0.8) translateX(15%) translateY(10%)}.uv-scale-left.uv-is-hidden{opacity:0;-webkit-transform:scale(0.8) translateX(-15%);-moz-transform:scale(0.8) translateX(-15%);-ms-transform:scale(0.8) translateX(-15%);-o-transform:scale(0.8) translateX(-15%);transform:scale(0.8) translateX(-15%)}.uv-scale-left-top.uv-is-hidden{opacity:0;-webkit-transform:scale(0.8) translateX(-15%) translateY(-10%);-moz-transform:scale(0.8) translateX(-15%) translateY(-10%);-ms-transform:scale(0.8) translateX(-15%) translateY(-10%);-o-transform:scale(0.8) translateX(-15%) translateY(-10%);transform:scale(0.8) translateX(-15%) translateY(-10%)}.uv-scale-left-bottom.uv-is-hidden{opacity:0;-webkit-transform:scale(0.8) translateX(-15%) translateY(10%);-moz-transform:scale(0.8) translateX(-15%) translateY(10%);-ms-transform:scale(0.8) translateX(-15%) translateY(10%);-o-transform:scale(0.8) translateX(-15%) translateY(10%);transform:scale(0.8) translateX(-15%) translateY(10%)}.uv-slide-top.uv-is-hidden{-webkit-transform:translateY(-100%);-moz-transform:translateY(-100%);-ms-transform:translateY(-100%);-o-transform:translateY(-100%);transform:translateY(-100%)}.uv-slide-bottom.uv-is-hidden{-webkit-transform:translateY(100%);-moz-transform:translateY(100%);-ms-transform:translateY(100%);-o-transform:translateY(100%);transform:translateY(100%)}.uv-slide-left.uv-is-hidden{-webkit-transform:translateX(-100%);-moz-transform:translateX(-100%);-ms-transform:translateX(-100%);-o-transform:translateX(-100%);transform:translateX(-100%)}.uv-slide-right.uv-is-hidden{-webkit-transform:translateX(100%);-moz-transform:translateX(100%);-ms-transform:translateX(100%);-o-transform:translateX(100%);transform:translateX(100%)}
+</style><style media="print" type="text/css">#uvTab,.uv-tray,.uv-icon,.uv-popover,.uv-bubble{display:none!important}</style></head>
+<body><div class="uv-tab uv-slide-bottom " id="uvTab" style="background:red url(http://widget.uservoice.com/pkg/clients/widget2/tab-horizontal-dark-3efc2033e3bb06b1eefaa3431d3d47d8.png) 0 50% no-repeat;border:1px solid #FFF;border-bottom:none;-moz-border-radius:4px 4px 0 0;-webkit-border-radius:4px 4px 0 0;border-radius:4px 4px 0 0;-moz-box-shadow:inset rgba(255,255,255,.25) 1px 1px 1px, rgba(0,0,0,.5) 0 1px 2px;-webkit-box-shadow:inset rgba(255,255,255,.25) 1px 1px 1px, rgba(0,0,0,.5) 0 1px 2px;box-shadow:inset rgba(255,255,255,.25) 1px 1px 1px, rgba(0,0,0,.5) 0 1px 2px;font:normal normal bold 14px/1em Arial, sans-serif;position:fixed;right:10px;bottom:0;z-index:9999;background-color:#afafaf;"><a id="uvTabLabel" style="background-color: transparent; display:block;padding:6px 10px 2px 42px;text-decoration:none;" href="javascript:return%20false;"><img src="Tracking_Demodulation_Embedded_files/feedback-tab.png" alt="Contact" style="border:0; background-color: transparent; padding:0; margin:0;"></a></div>
+        <div class="ads">
+        		<div id="div-gpt-ad-942957474691236830-1">
+		 <script type="text/javascript">
+		  googletag.display('div-gpt-ad-942957474691236830-1');
+		 </script><script type="text/javascript" src="Tracking_Demodulation_Embedded_files/ads"></script>
+	</div>
+        </div>   
+       	
+			<div id="div-gpt-ad-942957474691236830-2">
+		 <script type="text/javascript">
+		  googletag.display('div-gpt-ad-942957474691236830-2');
+		 </script>
+	</div>
+		
+
+
+	<div class="page">
+	    <header>
+		<!-- UTEIIS01 -->
+<div class="universal-header">
+	<a class="datasheets" href="http://www.datasheets.com/?cid=UniversalHeader" title="Datasheets.com: Search For Over 250 Million Parts">datasheets.com</a>
+	<a class="ebn" href="http://www.ebnonline.com/?cid=UniversalHeader" title="EBN: The Online Community for Global Supply Chain Professionals">EBN.com</a>
+	<a class="edn" href="http://www.edn.com/?cid=UniversalHeader" title="EDN: Join Electronics Engineers and Experts around the Globe">EDN.com</a>
+	<a class="eet" href="http://www.eet.com/?cid=UniversalHeader" title="EE Times: The Information Powerhouse for the Global Electronics Industry">EETimes.com</a>
+	<a class="emb" href="http://www.embedded.com/?cid=UniversalHeader" title="Embedded: The Source For Everything Embedded">Embedded.com</a>
+	<a class="pa" href="http://www.planetanalog.com/?cid=UniversalHeader" title="Planet Analog: All Signal, No Noise">PlanetAnalog.com</a>
+	<a class="tol" href="http://www.techonline.com/?cid=UniversalHeader" title="TechOnline: Education For The Creators of Technology ">TechOnline.com</a>
+	<span class="spacer">&nbsp;</span>
+	<div class="events">
+		<a>Events <i>▼</i></a>
+		<ul class="unstyled">
+			<li><a href="http://www.eeliveshow.com/?cid=UniversalHeader" target="_blank">EE Live!</a></li>
+			<li><a href="http://www.designcon.com/?cid=UniversalHeader" target="_blank">DesignCon</a></li>
+			<li><a href="http://www.escbrazil.com.br/?cid=UniversalHeader" target="_blank">ESC Brazil</a></li>
+			<li><a href="http://www.esc-india.com.com/?cid=UniversalHeader" target="_blank">ESC India</a></li>
+			<li><a href="http://e.ubmelectronics.com/armtechcon/index.html?cid=UniversalHeader" target="_blank">ARM TechCon</a></li>
+			<li><a href="http://www.designersofthings.com/sanfrancisco?cid=UniversalHeader" target="_blank">Designers of Things</a></li>
+		</ul>
+	</div>
+	<a class="ubmt" href="http://tech.ubm.com/?cid=UniversalHeader">UBM Tech</a>
+</div>
+<div class="universal-header-for-mobile">
+<a>UBM Tech <i>▼</i></a>
+<ul class="unstyled">
+	<a href="http://www.datasheets.com/?cid=UniversalHeader">datasheets.com</a>
+	<a href="http://www.ebn.com/?cid=UniversalHeader">EBN.com</a>
+	<a href="http://www.edn.com/?cid=UniversalHeader">EDN.com</a>
+	<a href="http://www.eet.com/?cid=UniversalHeader">EETimes.com</a>
+	<a href="http://www.embedded.com/?cid=UniversalHeader">Embedded.com</a>
+	<a href="http://www.planetanalog.com/?cid=UniversalHeader">PlanetAnalog.com</a>
+	<a href="http://www.techonline.com/?cid=UniversalHeader">TechOnline.com</a>
+</ul>
+</div>
+        
+	    <div class="ads row hide-for-small">
+	            <div class="twelve columns wrap">
+	               <div class="banner">
+                    	<div id="div-gpt-ad-942957474691236830-3">
+		 <script type="text/javascript">
+		  googletag.display('div-gpt-ad-942957474691236830-3');
+		 </script>
+	</div>
+                 </div>
+                    <div class="milestone">
+            		 <!-- MILESTONE -->    
+        		</div>		
+	            </div>
+	    </div>
+	    
+	    <div class="welcome row">
+        	<p class="welcome"></p>
+        </div>
+        
+        <div class="masthead row">
+            <div class="five columns">
+                <a href="http://www.embedded.com/"><img src="Tracking_Demodulation_Embedded_files/embedded-logo.png" alt=""></a>
+            </div>
+            <div class="seven columns user-meta hide-for-small">
+                <div class="links">
+                    <a href="http://www.embedded.com/contactus">Contact Us</a> <span class="divider">•</span>
+                    <span id="newsletter-signed-in" style="display:none;">
+                          <a alt="prettyPhoto" href="http://www.embedded.com/UserAccount/Subscribe?iframe=true&amp;width=570&amp;height=600">Subscribe to Newsletters</a>
+                    </span>
+                    <span id="newsletter-login">                    
+	                    					    	<a class="first" onclick="NextGen.loginForm('/login?successfulLoginRedirect=http%3A%2F%2Fwww.embedded.com%2Felectronics-blogs%2Fspectra%2F4023287%2FTracking-Demodulation')" href="javascript:void(0)"><b>Subscribe to Newsletters</b></a>
+					                        </span>
+                </div>
+
+                <div class="login-bar">
+
+</div>                <div class="search">
+                    <a href="#" class="button"><img src="Tracking_Demodulation_Embedded_files/transparent-swatch.png" alt=""></a>
+                </div>
+
+            </div>
+
+        </div>
+     	<!-- Navigation MOBILE -->
+        <div class="navigation row show-for-small">
+            <div class="seven mobile-three columns">
+                <ul class="nav-bar">
+                    <li class="has-flyout">
+                        <a href="#">Navigation</a>
+                        <a href="#" class="flyout-toggle"><span></span></a>
+                        <ul class="flyout">
+                            <li><a href="">Development</a></li>
+                            <li><a href="">Essentials &amp; Education</a></li>
+                            <li><a href="">Community</a></li>
+                            <li><a href="">Archives </a></li>
+                            <li><a href="">About Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="three mobile-one columns">
+                <div class="search">
+                    <a href="#" class="button"><img src="Tracking_Demodulation_Embedded_files/transparent-swatch.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+         <div class="row">
+            <div class="twelve mobile-four columns">
+                <div class="search-popup">
+                    <form class="form-inline search-form clearfix" _lpchecked="1">
+                        <input class="input-text" placeholder="Search" type="text">
+                        <input class="button" value="Submit" type="submit">
+                        <label class="error"></label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <!-- Navigation -->
+
+
+	<div class="navigation row hide-for-small">
+    <div class="twelve columns">
+        <label class="error"></label>
+        <ul class="nav-bar">
+            <li class="active home-btn">
+                <a href="http://www.embedded.com/">Home</a>
+            </li>
+            <li class="has-flyout double">
+                <a href="#">Development</a>
+                <a class="flyout-toggle" href="#"><span></span></a>
+                <div class="flyout-wrapper row hidden">
+                <div class="six mobile-two columns">
+                    <ul style="display:block;" class="flyout">
+                        <li><a href="http://www.embedded.com/development">All Articles</a></li>
+                        <li><a href="http://www.embedded.com/development/configurable-systems">Configurable Systems</a></li>
+                        <li><a href="http://www.embedded.com/development/connectivity">Connectivity</a></li>
+                        <li><a href="http://www.embedded.com/development/debug-and-optimization">Debug &amp; Optimization</a></li>
+                        <li><a href="http://www.embedded.com/development/mcus-processors-and-socs">MCUs, Processors &amp; SoCs</a></li>
+                        <li><a href="http://www.embedded.com/development/operating-systems">Operating Systems</a></li>
+                        <li><a href="http://www.embedded.com/development/power-optimization">Power Optimization</a></li>
+                    </ul>
+                </div>
+                        <div class="six mobile-two columns">
+                <ul style="display:block;" class="flyout">
+                    <li><a href="http://www.embedded.com/development/programming-languages-and-tools">Programming Languages &amp; Tools</a></li>
+                    <li><a href="http://www.embedded.com/development/prototyping-and-development">Prototyping &amp; Development</a></li>
+                    <li><a href="http://www.embedded.com/development/real-time-and-performance">Real-time &amp; Performance</a></li>
+                    <li><a href="http://www.embedded.com/development/real-world-applications">Real-world Applications</a></li>
+                    <li><a href="http://www.embedded.com/development/safety-and-security">Safety &amp; Security</a></li>
+                    <li><a href="http://www.embedded.com/development/system-integration">System Integration</a></li>
+                </ul>
+                </div>
+                </div>
+            </li>
+            <li class="has-flyout">
+                <a href="#">Essentials &amp; Education</a>
+                <a class="flyout-toggle" href="#"><span></span></a>
+                <ul class="flyout" style="display: none;">
+                    <li><a href="http://www.embedded.com/products/all">Products</a></li>
+				    <li><a href="http://www.embedded.com/news/all">News</a></li>
+				    <li><a href="http://www.embedded.com/education-training/source-codes">Source Code Library</a></li>
+				    <li><a href="http://www.embedded.com/education-training/webinars">Webinars</a></li>
+                    <li><a href="http://www.embedded.com/education-training/courses">Courses</a></li>
+                    <li><a href="http://www.embedded.com/education-training/tech-papers">Tech Papers</a></li>
+                </ul>
+            </li>
+            <li class="has-flyout">
+                <a href="#">Community</a>
+                <a class="flyout-toggle" href="#"><span></span></a>
+                <ul class="flyout">
+                    <li><a href="http://www.embedded.com/insights">Insights</a></li>				   
+                    <li><a href="http://forums.embedded.com/">Forums</a></li>		   
+				    <li><a href="http://www.embedded.com/events">Events</a></li>
+                </ul>
+            </li>
+            <li class="has-flyout">
+                <a href="#">Archives</a>
+                <a class="flyout-toggle" href="#"><span></span></a>
+                <ul class="flyout">
+                    <li><a href="http://www.embedded.com/magazines">ESP / ESD Magazine</a></li>
+                    <li><a href="http://www.embedded.com/archive/Embedded-com-Tech-Focus-Newsletter-Archive">Newsletters</a></li>
+                    <li><a href="http://www.embedded.com/videos">Videos</a></li>
+				    <li><a href="http://www.embedded.com/collections/all">Collections</a></li>
+                </ul>
+            </li>
+            <li class="has-flyout">
+                <a href="#">About Us</a>
+                <a class="flyout-toggle" href="#"><span></span></a>
+                <ul class="flyout">
+                    <li><a href="http://www.embedded.com/aboutus">About Embedded</a></li>
+                    <li><a href="http://www.embedded.com/contactus">Contact Us</a></li>
+                    <li><a href="http://www.embedded.com/newsletters">Newsletters</a></li>
+                    <li><a href="http://www.embedded.com/advertising">Advertising</a></li>
+                    <li><a href="http://www.embedded.com/editorial-contributions">Editorial Contributions</a></li>
+                    <li><a href="http://www.embedded.com/site-map">Site Map</a></li>
+                </ul>
+            </li>
+            <li class="search">
+                <form _lpchecked="1" class="form-inline search-form clearfix">
+                    <input value="Search" class="input-text" type="text">
+                    <input value="" class="search-button" type="submit">
+                </form>
+            </li>
+        </ul>
+    </div>
+</div>
+</header>
+	    <div id="embedded-main-content">
+	    <div class="row">
+	<div class="twelve columns">
+		<div class="announcements"><div id="lecture_topper_filler"></div></div>
+	</div>
+</div>	        <!-- BREADCRUMBS ROW -->
+	<div class="row">
+		<div class="twelve columns hide-for-small">
+			<!-- Breadcrumbs -->
+<ul class="bread-crumbs">
+				
+        <li><a class="button" href="http://www.embedded.com/">Home</a></li><li class="arrow">&gt;</li> 
+        					 <li><a class="button" href="http://www.embedded.com/insights">Insights</a></li> 
+					   <li class="arrow">&gt;</li><li class="arrow">&gt;</li> <li><a class="button active" href="http://www.embedded.com/electronics-blogs/4210793/Spectra">Spectra</a></li>				        </ul>
+<!-- Breadcrumbs -->		</div>
+	</div>
+	<div class="content row">
+	    <!-- LEFT COLUMN -->
+	    <div class="eight columns tablet-clear">
+	        <!-- BLOG DETAILED ROW -->
+			<div class="row">
+						 				<div class="twelve columns">
+			        <div class="module bigbox blog">
+			            <div class="body content-detail">
+			                <!-- <p class="company-text-ad">Sponsored by <a href="#">Cirrus</a></p> Show for Tablet and Mobile -->
+			                <div class="item full">
+			                    <h1>Tracking Demodulation</h1>
+			                    <p class="meta darkgrey hide-for-small">
+			                    <span class="author">
+			                    <strong>
+			                    Don Morgan			                    </strong>
+			                    </span>
+								</p>
+			                    <p class="meta">
+			                        <span class="date">February 26, 2001</span>
+			                    </p>
+			                    <div class="social-strip hide-for-small">
+	<div class="social-plugins left">
+		<span class="social_media linkedin">
+		  <script src="Tracking_Demodulation_Embedded_files/in.js" type="text/javascript"></script>
+		    <script type="IN/Share" data-url="http://www.embedded.com/electronics-blogs/spectra/4023287/Tracking-Demodulation" data-counter="right"></script>
+		</span>    
+		<span class="social_media" style="position: static !important;">
+			    <g:plusone size="medium"></g:plusone>
+		</span>
+		<span class="social_media">
+			    <div id="twitter">
+					<script type="text/javascript" src="Tracking_Demodulation_Embedded_files/widgets.js"></script>
+					<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.embedded.com/electronics-blogs/spectra/4023287/Tracking-Demodulation" data-text="Tracking Demodulation" data-count="horizontal" data-via="embedded_com" data-counturl="http://www.embedded.com/electronics-blogs/spectra/4023287/Tracking-Demodulation">Tweet</a>
+			    </div>    
+		</span>
+		<span class="social_media">
+			    <div class=" fb_reset" id="fb-root"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe src="Tracking_Demodulation_Embedded_files/w9JKbyW340G.html" style="border: medium none;" tabindex="-1" title="Facebook Cross Domain Communication Frame" aria-hidden="true" id="fb_xdm_frame_http" scrolling="no" allowtransparency="true" name="fb_xdm_frame_http" frameborder="0"></iframe><iframe src="Tracking_Demodulation_Embedded_files/w9JKbyW340G_002.html" style="border: medium none;" tabindex="-1" title="Facebook Cross Domain Communication Frame" aria-hidden="true" id="fb_xdm_frame_https" scrolling="no" allowtransparency="true" name="fb_xdm_frame_https" frameborder="0"></iframe></div></div></div>
+			    <script>            (function (d, s, id) {
+				    var js, fjs = d.getElementsByTagName(s)[0];
+				    if (d.getElementById(id)) return;
+				    js = d.createElement(s); js.id = id;
+				    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=22297258016";
+				    fjs.parentNode.insertBefore(js, fjs);
+				} (document, 'script', 'facebook-jssdk'));</script>
+			    <div class="fb-like" data-href="http://www.embedded.com/electronics-blogs/spectra/4023287/Tracking-Demodulation" data-send="false" data-layout="button_count" data-width="42" data-show-faces="false"></div>
+
+
+		</span>
+	</div>
+	<div class="traditional right">        
+		<span class="relative social-save">
+			<a href="#" class="save-follow"><img src="Tracking_Demodulation_Embedded_files/folder.png" alt="Save As File"></a>
+			<span class="save-dropdown button content_4023287 author_" data-contentitemid="4023287" data-authorid="">
+				<a class="save-content" href="#">Save to My Library</a>
+				<a class="follow-comment" href="#">Follow Comments</a>
+							</span>
+		</span>
+		<a href="#" class="hide-for-tablet" onclick="openprintviewwindow('/print/4023287');"><img src="Tracking_Demodulation_Embedded_files/printer.png" alt="Print"></a>
+		<a href="mailto:?subject=Tracking%20Demodulation&amp;body=http://www.embedded.com/electronics-blogs/spectra/4023287/Tracking-Demodulation" target="_blank"><img src="Tracking_Demodulation_Embedded_files/envelope.png" alt="Email"></a>
+	</div>
+</div>			                    <p class="meta darkgrey show-for-small">
+			                         <span class="author">
+			                         <strong>
+			                         Don MorganFebruary 26, 2001			                         </strong>
+			                         </span>
+								</p>
+														<style>
+								.externalpdf-icon{
+									background:url(/images/edn/master/sprite-master.png) repeat scroll -226px -123px transparent;
+									float:left;
+									height:65px;
+									margin:0 10px 10px 0;
+									width:55px;
+								}
+							</style>
+								
+			                    <p>
+			                   		              												<b>Tracking Demodulation</b><br>
+           											 
+		  <font size="2" face="Verdana, Georgia, Arial, Sans-Serif">
+</font></p><p><font size="2" face="Verdana, Georgia, Arial, Sans-Serif">
+
+</font></p><p><font size="2" face="Verdana, Georgia, Arial, Sans-Serif">
+<font size="2" face="Verdana, Georgia, Sans-serif"><b>High resolution 
+encoders are expensive, but alternatives exist. You can develop a 
+high-resolution system using a sinusoidal encoder or resolver.</b></font></font></p><font size="2" face="Verdana, Georgia, Arial, Sans-Serif">
+<p>
+
+</p><p>
+Last month, we covered some of the basics of using cosinusoids to 
+determine position in a motion control application. We translated the 
+magnitudes of two voltages-one representing the sine and the other 
+representing the cosine of position-into an angle indicating position. 
+We obtained these voltages using a tracking device called a resolver. As
+ the motion control industry (and industry in general) reaches for 
+tighter specifications, higher performance, and lower cost, this 
+procedure, called interpolation, is an increasingly popular alternative.
+ 
+</p>
+<p>
+
+</p><p>
+This month, I'll show you how to develop high-resolution position 
+feedback with two cosinusoids that are in quadrature, meaning 90 degrees
+ out of phase. We'll examine two applications in particular (there are 
+more): sinusoidal encoders and resolvers. We will concentrate on the 
+algorithmic techniques common to both, and save the differences for next
+ month. 
+First, I would like to address the interpolation scheme we will use, as 
+well as some possible enhancements.
+</p>
+<p>
+
+</p><p>
+<font size="3" face="Verdana, Georgia, Arial, Sans-Serif"><b>Voltages to angles</b></font>
+</p>
+<img src="Tracking_Demodulation_Embedded_files/0101spectrafig1.gif" height="223" hspace="0" vspace="5" width="308" border="0">
+<p>
+
+</p><p>
+Figure 1 shows two cosinusoids in quadrature. They represent the 
+feedback from a sinusoidal encoder or resolver. We label each of the two
+ cosinusoids according to their phase:
+</p>
+<br clear="all"><img src="Tracking_Demodulation_Embedded_files/0101spectraeq1.gif" hspace="0" vspace="0" border="0"><br clear="all">
+<p>
+
+</p><p>
+is zero voltage at zero degrees.
+</p>
+<br clear="all"><img src="Tracking_Demodulation_Embedded_files/0101spectraeq2.gif" hspace="0" vspace="0" border="0"><br clear="all">
+<p>
+
+</p><p>
+is equal to 1V at zero degrees, which makes it 90 degrees out of phase 
+with the first cosinusoid. Recall that sine  and cosine represent ratios
+ based on the length of sides of a triangle as captured within the unit 
+circle. The ratio of these two ratios is equal to another function, 
+called the tangent:
+</p>
+<br clear="all"><img src="Tracking_Demodulation_Embedded_files/0101spectraeq3.gif" hspace="0" vspace="0" border="0"><br clear="all">
+<p>
+
+</p><p>
+By taking the arctangent of the two inputs, we can find the angular position of the shaft of the encoder:
+</p>
+<br clear="all"><img src="Tracking_Demodulation_Embedded_files/0101spectraeq4.gif" hspace="0" vspace="0" border="0"><br clear="all">
+<p>
+
+</p><p>
+This information will help us track our position and, thereby, velocities in the servo system.
+</p>
+<p>
+
+</p><p>
+A high resolution arctangent evaluation is a long and difficult 
+calculation for an integer-based processor. Sine and cosine, however, 
+are relatively easy. This, combined with the fact that most of these 
+applications will require a filter of some sort to remove noise (as much
+ as possible) anyway, makes a tracking demodulator an excellent 
+alternative. It's fast, it's lean-it's even possible to put it in an 
+FPGA and offload the processing altogether. 
+Resolution
+</p>
+<p>
+
+</p><p>
+The resolution of our interpolator depends on a number of factors. Most 
+significantly, it depends on the error in the analog-to-digital 
+converter (ADC).  
+</p>
+<p>
+
+</p><p>
+If we choose a reasonably good 12-bit ADC, we can consider the error 
+equal to its least significant bit for quantization purposes, which is 
+2-12. This neglects other errors in the system, which I cannot estimate 
+here. However, assuming good layout and adequate electronics, we should 
+be able to account for the absent error by doubling that of the ADC.
+If we spread the error evenly throughout a single rotation, we have:
+</p>
+<br clear="all"><img src="Tracking_Demodulation_Embedded_files/0101spectraeq5.gif" hspace="0" vspace="0" border="0"><br clear="all">
+<p>
+
+</p><p>
+or about 0.014 degrees. Because this is the error, the resolution in a revolution must be approximately 213.65, or 12,855.
+</p>
+<p>
+
+</p><p>
+<font size="3" face="Verdana, Georgia, Arial, Sans-Serif"><b>A basic system</b></font>
+</p>
+<p>
+
+</p><p>
+In its simplest and most direct form, an interpolating system accepts 
+the cosinusoidal inputs at the ADC through suitable buffering and 
+filtering, performs an arctangent, and determines the angle within the 
+necessary resolution. 
+</p>
+<p>
+
+</p><p>
+In many applications, the noise from the integrated gate bipolar 
+transistor's (IGBT) switching, which is transmitted either through 
+proximity or by direct connection, can cause problems in the 
+conversions. To counter this, we could high-pass filter the input. The 
+filter's  corner frequency (-3dB point) has to be far enough from our 
+operating frequency to keep the phase flat, but low enough to remove 
+most of the unwanted noise. If your pulse width modulation (PWM) 
+frequency is, say, 16kHz, you could have a second-order filter with 
+corner frequency at 1kHz, or even 2kHz, that would put the stop band 
+between 48dB and 36dB, without sacrificing performance.
+The choice of the corner frequency-and the form of the filter-is 
+application dependent. For our needs, we'll use a simple Butterworth 
+filter, which combines a reasonably flat pass band and minimal phase 
+distortion. We'll also pick a Q of 0.707 for minimal error at the 
+turnover frequency (In this case, Q is the ratio of the turnover 
+frequency to the 3dB point. The higher the Q, the more distortion at the
+ turnover frequency). 
+</p>
+<p>
+
+</p><p>
+Sometimes, however, this is not the optimal implementation. If board 
+space is critical and the DSP is already working hard, or if memory is 
+at a premium, you might want to go another way. 
+</p>
+<p>
+
+</p><p>
+<font size="3" face="Verdana, Georgia, Arial, Sans-Serif"><b>Tracking devices</b></font>
+</p>
+<p>
+
+</p><p>
+Depending on the application, tracking devices can make up for 
+deficiencies in other areas by providing a means to perform complex 
+functions in only a few steps, or with slower elements. A good example 
+of such a device is the tracking ADC. Built with a comparator and a 
+counter, it produces analog-to-digital conversions at a higher speed 
+with slower, less expensive parts. 
+</p>
+<p>
+
+</p><p>
+The heart of this converter is a counter driven by a constant high-speed
+ clock; the output of the counter is connected to a digital-to-analog 
+converter (DAC). When the counter counts up, the magnitude of the 
+voltage at the output of the DAC rises. When the counter goes down, so 
+does the magnitude. To make a tracking ADC, a comparator is introduced 
+ahead of the counter. The comparator  has two inputs. If the input from 
+the external circuitry is greater than the output of the DAC, the 
+counter is told to count up; when it is less, the counter is instructed 
+to count down.
+</p>
+<p>
+
+</p><p>
+Imagine performing analog-to-digital conversion on a sine wave. 
+Depending on the sample rate, the difference between each sample can be 
+very small. Here, it provides a good result quickly, but you need to use
+ it carefully. If you were trying to convert a square wave with a 
+tracking ADC, each edge would require the counter to count all the way 
+up or all the way down, which could result in a very slow system. 
+</p>
+<p>
+
+</p><p>
+<font size="3" face="Verdana, Georgia, Arial, Sans-Serif"><b>A tracking demodulator</b></font>
+</p>
+<p>
+
+</p><p>
+The tracking demodulator is similar to the tracking ADC because it 
+operates off the differences between a predicted and an actual value to 
+compute the next value. This algorithm also incorporates a second-order 
+filter in the processing. We will specify the sample rate for this 
+algorithm at 8kHz. Another controller might use a different rate, 
+depending on the update period. 
+The tracking demodulator, like the tracking ADC, compares the input from
+ an analog cosinusoidal device-either an encoder or resolver-with an 
+estimated value derived from previous values. In the block diagram in 
+Figure 2, we subtract our predicted position (the one we generate) from 
+the actual position (the voltages in quadrature returned from the 
+encoder or resolver) using the formula for the difference of two angles:
+</p>
+<br clear="all"><img src="Tracking_Demodulation_Embedded_files/0101spectraeq6.gif" hspace="0" vspace="0" border="0"><br clear="all">
+<p>
+
+</p><p>
+<img src="Tracking_Demodulation_Embedded_files/0101spectrafig2.gif" height="165" hspace="0" vspace="5" width="311" border="0">
+</p><p>
+
+</p><p>
+After scaling the differences by a value representing the corner 
+frequency of the filter, we put them through an accumulator. (An 
+accumulator sums: the predicted value is equal to the sum of all past 
+samples plus the latest input.) When accelerating from a stop, the 
+differences between predicted and actual values add up quickly, but as 
+soon as  velocity stabilizes, the differences fall to zero. At this 
+point, the output of our first accumulator will be a constant that 
+represents the predicted velocity, in terms of a position displacement 
+per sample cycle.
+The output of this accumulator is then summed in the second accumulator,
+ which produces position. We also include a scaled addition of velocity 
+(output of the first accumulator) to this final position sum as a 
+correction factor-this is the damping in the second-order transfer 
+function.
+</p>
+<p>
+
+</p><p>
+<font size="3" face="Verdana, Georgia, Arial, Sans-Serif"><b>An example</b></font>
+</p>
+<p>
+
+</p><p>
+In the following example, I disregard the second-order filter function 
+because it isn't necessary for an understanding of the algorithm.
+Suppose that we step onto a seat on a Ferris wheel at the point closest 
+to the ground. Our speed and position are both zero. Both accumulators 
+are at zero. We will be checking our position every second. 
+</p><p>
+
+</p><p>
+The Ferris wheel operator moves our chair up one increment to seat the 
+next paying guest. This takes him one second. At this point, we compare 
+our actual position with our predicted position. Our predicted position 
+is zero; we had been sitting motionless near the ground and all our 
+accumulators had decayed to zero. So on our first comparison, we use the
+ previous formula to calculate a difference. That first difference is 
+placed in the first accumulator and subsequently added to the second 
+accumulator. The output of the second accumulator is our new position.
+</p>
+<p>
+
+</p><p>
+One second later, the Ferris wheel moves again, and a new passenger gets
+ on. We take the sine and cosine of our estimated position and compare 
+it to our sine and cosine inputs. The difference is added to the first 
+accumulator, which is then added to the second and stored as our new 
+position.
+</p><p>
+
+</p><p>
+Another passenger gets on. Again, we difference the expected position 
+with the actual, but because in each increment we have moved the same 
+distance in the same amount of time, we find that the expected position 
+is greater. A negative difference is added to the first accumulator to 
+reduce the integral. This smaller value is added to the second 
+accumulator and a new position is produced.
+</p>
+<p>
+
+</p><p>
+We continue this process with the Ferris wheel moving the same amount 
+each second. Soon the expected position is the same as the actual. Now, 
+we add the first accumulator to the second to estimate position. When we
+ compare, we see no difference. At a constant velocity, the value in the
+ first accumulator stabilizes and does not change. (This is just as it 
+is in a car moving at 60mph. To know how far you have gone you add 88 
+feet for every second of travel.) The first accumulator integrates 
+acceleration and now represents incremental velocity. Integrating these 
+increments in the second accumulator gives us a reliable position. 
+Because no differences show up between expected and actual position, we 
+are adding zero to the first accumulator and subsequently adding a 
+constant to the second for incremental position change.
+</p><p>
+
+</p><p>
+Now, the ride is over and the Ferris wheel is slowing. Once again a 
+difference appears; our predicted position is greater than the real 
+position. We are decelerating. This is reflected in the first 
+accumulator, which is reduced, and then in the second accumulator, which
+ shows smaller and smaller position changes.
+</p>
+<p>
+
+</p><p>
+When we again come to a stop, the differences will eventually clear the 
+first accumulator and, depending on actual position, may clear the 
+second.
+</p><p>
+
+</p><p>
+This is how you track position with differences between predicted and actual position. 
+</p>
+<p>
+
+</p><p>
+<font size="3" face="Verdana, Georgia, Arial, Sans-Serif"><b>The filter</b></font>
+</p>
+<p>
+
+</p><p>
+The filter/demodulator consists of a second-order filter constructed 
+with accumulators. The input samples are scaled to control where the 
+accumulator overflows-if it ever does-to fit the function to 
+applications requiring integration.
+</p>
+<p>
+
+</p><p>
+We start by determining what value can be added to the accumulator 
+during each sample period to result in an overflow in one second, the 
+amount of time in which the rotor moves. In other words, we are setting 
+up the accumulator for a time constant of one second.
+</p><p>
+
+</p><p>
+To do this, we must set some constraints on the system. We choose a 
+sample rate for the accumulator of 8kHz, a common value for many 
+applications. We also choose a 16-bit word size, another common value.
+If 2p = 216 we can know instantly that the value that will overflow our 
+accumulator is:
+</p>
+<br clear="all"><img src="Tracking_Demodulation_Embedded_files/0101spectraeq7.gif" hspace="0" vspace="0" border="0"><br clear="all">
+<p>
+
+</p><p>
+This means that 8.192 = 1Hz. This relationship is also important when using this technique to determine velocity.
+</p>
+<p>
+
+</p><p>
+<font size="3" face="Verdana, Georgia, Arial, Sans-Serif"><b>The scaling factors</b></font>
+</p>
+<p>
+
+</p><p>
+The real magic of this technique is that it can be combined with a 
+second-order filter to help remove some of the transient noise from the 
+switching of the IGBTs. What I have been calling scaling factors are 
+really the coefficients of this filter, and they are very easy to figure
+ out. Because you may opt to implement this on any processor, I'm 
+omitting processor-specific details.
+</p><p>
+
+</p><p>
+Two scaling functions are involved in this process, both derived 
+directly from the transfer function for a second-order low pass filter. 
+One depends on the corner frequency. The other depends on the Q, or 
+damping, factor. The transfer function is:
+</p>
+<br clear="all"><img src="Tracking_Demodulation_Embedded_files/0101spectraeq8.gif" hspace="0" vspace="0" border="0"><br clear="all">
+<p>
+
+</p><p>
+Both will be developed as fractions so that we can multiply rather than 
+divide them, which would be cumbersome and noisy. The first scaling 
+factor is: 
+</p>
+<br clear="all"><img src="Tracking_Demodulation_Embedded_files/0101spectraeq9.gif" hspace="0" vspace="0" border="0"><br clear="all">
+<p>
+
+</p><p>
+This will be the inverse of the square of frequency in Hertz. We'll call it fr. The next is the damping factor:
+</p>
+<br clear="all"><img src="Tracking_Demodulation_Embedded_files/0101spectraeq10.gif" hspace="0" vspace="0" border="0"><br clear="all">
+<p>
+
+</p><p>
+We will call this damp. You see them noted in the block diagram. They 
+occur as simple multiplications.
+Next month, we'll take the tracking demodulator concept and see how it 
+applies to systems using analog cosinusoids in quadrature to indicate 
+position.	
+</p>
+<p>
+
+</p><p>
+<b>Don Morgan</b> is senior engineer at Ultra Stereo Labs and a 
+consultant with 25 years of experience in signal processing, embedded 
+systems, hardware, and software. Morgan recently completed a book about 
+numerical methods, featuring multi-rate signal processing and wavelets, 
+called Numerical Methods for DSP Systems in C. He is also the author of <i>Practical DSP Modeling, Techniques, and Programming in C,</i> published by John Wiley &amp; Sons, and Numerical Methods for Embedded Systems from M&amp;T. Don's e-mail address is <a href="mailto:dgm@baykitty.com">dgm@baykitty.com</a>.
+</p>
+<p>
+
+</p></font><p><font size="2" face="Verdana, Georgia, Arial, Sans-Serif">
+Return to <a href="http://www.embedded.com/2001/0101/">Table of Contents</a>
+			</font>			                    </p>
+			                    
+			                    <div class="clear"></div>
+			                 <div class="social-strip hide-for-small">
+	<div class="social-plugins left">
+		<span class="social_media linkedin">
+		  <script src="Tracking_Demodulation_Embedded_files/in.js" type="text/javascript"></script>
+		    <script type="IN/Share" data-url="http://www.embedded.com/electronics-blogs/spectra/4023287/Tracking-Demodulation" data-counter="right"></script>
+		</span>    
+		<span class="social_media" style="position: static !important;">
+			    <g:plusone size="medium"></g:plusone>
+		</span>
+		<span class="social_media">
+			    <div id="twitter">
+					<script type="text/javascript" src="Tracking_Demodulation_Embedded_files/widgets.js"></script>
+					<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.embedded.com/electronics-blogs/spectra/4023287/Tracking-Demodulation" data-text="Tracking Demodulation" data-count="horizontal" data-via="embedded_com" data-counturl="http://www.embedded.com/electronics-blogs/spectra/4023287/Tracking-Demodulation">Tweet</a>
+			    </div>    
+		</span>
+		<span class="social_media">
+			    <div id="fb-root"></div>
+			    <script>            (function (d, s, id) {
+				    var js, fjs = d.getElementsByTagName(s)[0];
+				    if (d.getElementById(id)) return;
+				    js = d.createElement(s); js.id = id;
+				    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=22297258016";
+				    fjs.parentNode.insertBefore(js, fjs);
+				} (document, 'script', 'facebook-jssdk'));</script>
+			    <div class="fb-like" data-href="http://www.embedded.com/electronics-blogs/spectra/4023287/Tracking-Demodulation" data-send="false" data-layout="button_count" data-width="42" data-show-faces="false"></div>
+
+
+		</span>
+	</div>
+	<div class="traditional right">        
+		<span class="relative social-save">
+			<a href="#" class="save-follow"><img src="Tracking_Demodulation_Embedded_files/folder.png" alt="Save As File"></a>
+			<span class="save-dropdown button content_4023287 author_" data-contentitemid="4023287" data-authorid="">
+				<a class="save-content" href="#">Save to My Library</a>
+				<a class="follow-comment" href="#">Follow Comments</a>
+							</span>
+		</span>
+		<a href="#" class="hide-for-tablet" onclick="openprintviewwindow('/print/4023287');"><img src="Tracking_Demodulation_Embedded_files/printer.png" alt="Print"></a>
+		<a href="mailto:?subject=Tracking%20Demodulation&amp;body=http://www.embedded.com/electronics-blogs/spectra/4023287/Tracking-Demodulation" target="_blank"><img src="Tracking_Demodulation_Embedded_files/envelope.png" alt="Email"></a>
+	</div>
+</div>			                 
+			                 							    
+			                </div>
+			            </div>
+			        </div>
+				</div>
+						</div>
+			<!-- COMMENTS ROW -->
+       				<div class="row">
+    <div class="twelve column">
+        <div class="module comments">
+            <h2><span id="comment-counter">Loading comments...</span> <a href="#" class="button orig-txt comments_login">Write a comment</a></h2>
+            <div id="post-comments" style="display:none;">
+                <div id="comment-signed-in" style="display: none;">
+                    <p><textarea name="description" id="mainComment" rows="4" class="postCommentTextarea"></textarea></p>
+					<p>
+						 <input name="submit" id="submit" onclick=" _commentService.postComment(4023287, $('#mainComment').val(), 0, 'electronics-blogs/spectra/4023287/Tracking-Demodulation', 1)" value="Submit Comment" class="button no-float" type="button">
+					</p>
+                </div>     
+                <div id="comment-login">
+                    <p class="center">To comment please
+                    <a class="red" onclick="NextGen.loginForm('/login?assetId=203&amp;successfulLoginRedirect=http%3A%2F%2Fwww.embedded.com%2Felectronics-blogs%2Fspectra%2F4023287%2FTracking-Demodulation')" href="javascript:void(0)">Log In</a> 
+                    </p>
+                </div>
+            </div>
+            <div id="comments" class="body"></div>
+        </div>
+    </div>
+</div>
+  <script type="text/javascript">
+  $(document).ready(function () {
+ _commentService.loadComments(4023287, 'electronics-blogs/spectra/4023287/Tracking-Demodulation');
+  _contentItemService.trackContentView(4023287);
+  });
+</script>
+
+
+
+	    </div>
+		 <!-- RIGHT COLUMN -->
+ <div class="four columns tablet-clear">
+ 	<div class="module">
+ 	         	</div>
+ 	<div class="module">
+ 			<div id="div-gpt-ad-942957474691236830-4">
+		 <script type="text/javascript">
+		  googletag.display('div-gpt-ad-942957474691236830-4');
+		 </script>
+	</div>
+ 	</div>
+ 	<!-- MOST READ ROW -->
+		<div class="module">
+		    <h2 class="blue">Most Read</h2>
+		    <div class="body">
+		    <ul>
+
+		    				           <li class="item small">
+				                <p class="meta">
+				                    <span class="date">11.06.2013</span>
+				                </p>
+				                <h2><a href="http://www.embedded.com/electronics-blogs/break-points/4423950/Screens-everywhere">Screens everywhere make a GUI dilemma</a></h2>
+				            </li>
+				 				           <li class="item small">
+				                <p class="meta">
+				                    <span class="date">03.15.2001</span>
+				                </p>
+				                <h2><a href="http://www.embedded.com/electronics-blogs/programming-pointers/4023307/References-vs-Pointers">References vs. Pointers</a></h2>
+				            </li>
+				 				           <li class="item small">
+				                <p class="meta">
+				                    <span class="date">09.05.2013</span>
+				                </p>
+				                <h2><a href="http://www.embedded.com/electronics-blogs/open-mike/4420567/Learning-Linux-for-embedded-systems">Learning Linux for embedded systems</a></h2>
+				            </li>
+				 		    </ul>
+		</div>
+		</div> 	 
+<div class="module tv">
+	<!--Brightcove Player -->
+	<h2 class="bg-darkgrey">
+        <a href="http://www.embedded.com/videos" class="button left no-bg no-padding">Embedded</a> 
+        <a href="http://www.embedded.com/videos" class="button left no-padding"><span>TV</span></a>
+		<a href="http://www.embedded.com/videos" class="right">&nbsp;&nbsp;<img src="Tracking_Demodulation_Embedded_files/expand-arrow.png" alt="Expand"></a>
+		<a href="http://www.embedded.com/videos" class="right">video library</a>
+	</h2>
+	<div class="body">
+        <object codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,47,0" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="flashObj" height="308" width="272"><param name="movie" value="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&amp;isUI=1"><param name="bgcolor" value="#FFFFFF"><param name="flashVars" value="playerID=1831537276001&amp;playerKey=AQ~~,AAABpcur3jE~,ShoUMJBK2TkfW-KQ7l5RBm-nWwcn5hf6&amp;domain=embed&amp;dynamicStreaming=true"><param name="base" value="http://admin.brightcove.com"><param name="seamlesstabbing" value="false"><param name="allowFullScreen" value="true"><param name="wmode" value="transparent"><param name="swLiveConnect" value="true"><param name="allowScriptAccess" value="always"><embed src="Tracking_Demodulation_Embedded_files/federated_f9.swf" bgcolor="#FFFFFF" flashvars="playerID=1831537276001&amp;playerKey=AQ~~,AAABpcur3jE~,ShoUMJBK2TkfW-KQ7l5RBm-nWwcn5hf6&amp;domain=embed&amp;dynamicStreaming=true" base="http://admin.brightcove.com" name="flashObj" seamlesstabbing="false" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" wmode="transparent" swliveconnect="true" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" height="308" width="272"></object>	</div>	
+</div>
+ 	<div class="module">
+ 			<div id="div-gpt-ad-942957474691236830-5">
+		 <script type="text/javascript">
+		  googletag.display('div-gpt-ad-942957474691236830-5');
+		 </script>
+	</div>
+ 	</div>
+ 	<!-- MOST READ ROW -->
+		<div class="module">
+		    <h2 class="blue">Most Commented</h2>
+		    <div class="body">
+		    <ul>
+
+		    				           <li class="item small">
+				                <p class="meta">
+				                    <span class="date">10.13.2014</span>
+				                </p>
+				                <h2><a href="http://www.embedded.com/electronics-blogs/break-points/4435861/ARM-TechCon-2014">ARM TechCon 2014</a></h2>
+				            </li>
+				 				           <li class="item small">
+				                <p class="meta">
+				                    <span class="date">10.18.2014</span>
+				                </p>
+				                <h2><a href="http://www.embedded.com/electronics-blogs/break-points/4436135/On-backups">On backups</a></h2>
+				            </li>
+				 		    </ul>
+		</div>
+		</div>
+ 	<div data-maxitems="10" data-contentitemid="4420567" id="related-container"><div class="module">
+    <h2 class="blue">Related Content</h2>
+    <div class="body">
+            <ul>
+        	 
+            <li class="item small">
+                <p class="meta lightgrey"><span class="date no-padding">02.26.2001</span> | <span class="category">Discussion</span></p>
+                <h2><a href="http://www.embedded.com/electronics-blogs/spectra/4023287/Tracking-Demodulation">Tracking Demodulation</a></h2>
+            </li>
+             
+            <li class="item small">
+                <p class="meta lightgrey"><span class="date no-padding">08.28.2007</span> | <span class="category">Discussion</span></p>
+                <h2><a href="http://www.embedded.com/electronics-blogs/industry-comment/4026113/Tracking-security-at-ESC-Boston">Tracking security at ESC Boston</a></h2>
+            </li>
+                    </ul>
+        
+    </div>
+</div></div> 	<div class="module">
+<!-- Partial search -->
+        	    		<style type="text/css">
+
+
+#PartsSearchShort_Submit {
+background: url("http://eetimes.com/ContentEETimes/Images/EMB-GenericContent/transparent-swatch.png") no-repeat scroll center center #4996CF;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 42px;
+    width: 48px;
+color:transparent;
+}
+#PartsSearchShort_Submit:hover {
+   background-color:#007F99;
+}
+.searchStyle {
+    color: #999999;
+    font-style: italic;
+}
+</style>
+<h2 class="blue">Parts Search <a href="http://www.datasheets.com/" class="right orig-txt">Datasheets.com</a></h2>
+<div class="body">
+
+
+<div class="searchbox">
+						<form class="search side-module">
+							<div class="row">
+								<div class="twelve columns">
+									<div class="row collapse">
+										<div class="ten mobile-three columns">
+											<input value="powered by DataSheets.com" class="searchStyle datasheets_search" id="PartsSearchShort_Text" type="text">
+										</div>
+										<div class="two mobile-one columns">
+<input id="PartsSearchShort_Submit" class="datasheets_submit" value=" " type="submit">   										
+										</div>
+									</div>
+								</div>
+							</div>
+							<label>185 Million Searchable Parts</label>
+						</form>
+
+
+
+	</div></div>    	    </div>
+ 	<!-- Knowledge Center ROW -->
+<div class="module">
+	<h2 class="blue"><span>KNOWLEDGE CENTER</span></h2>
+	
+		<div id="div-gpt-ad-942957474691236830-37">
+		 <script type="text/javascript">
+		  googletag.display('div-gpt-ad-942957474691236830-37');
+		 </script>
+	</div>
+	<br class="clear">
+    	<div id="div-gpt-ad-942957474691236830-38">
+		 <script type="text/javascript">
+		  googletag.display('div-gpt-ad-942957474691236830-38');
+		 </script>
+	</div>
+    <br class="clear">
+    	<div id="div-gpt-ad-942957474691236830-39">
+		 <script type="text/javascript">
+		  googletag.display('div-gpt-ad-942957474691236830-39');
+		 </script>
+	</div>
+    <br class="clear">
+    	<div id="div-gpt-ad-942957474691236830-40">
+		 <script type="text/javascript">
+		  googletag.display('div-gpt-ad-942957474691236830-40');
+		 </script>
+	</div>
+    <br class="clear">
+    	<div id="div-gpt-ad-942957474691236830-41">
+		 <script type="text/javascript">
+		  googletag.display('div-gpt-ad-942957474691236830-41');
+		 </script>
+	</div>
+    <br class="clear">  
+	    
+</div> 		<div class="partial">
+	 		<div id="div-gpt-ad-942957474691236830-42">
+		 <script type="text/javascript">
+		  googletag.display('div-gpt-ad-942957474691236830-42');
+		 </script>
+	</div>
+	</div>
+ </div>
+
+	</div><!-- ContainerSet CacheKey: embeddedv1_article_Embedded_Detail_BlogItem0 -->		</div>
+
+    
+     <footer>
+        <!-- RSS ROW -->
+		<div class="rss">
+			<div class="row">
+				<div class="twelve columns">
+					<div class="wrap">
+						<span class="bold">Subscribe to RSS updates</span>
+						<a class="button" href="http://www.embedded.com/rss/all">all articles</a>
+						<span>or</span>
+						<div class="has-flyout">
+							<a class="button category">category <span class="arrow">▼</span></a>
+		                    <div class="flyout-wrap row hidden">
+		                        <div class="six mobile-two columns">
+		                            <ul class="flyout">
+		                                <li><a href="http://www.embedded.com/rss/development-center/configurable-systems">Configurable Systems</a></li>   
+		                                <li><a href="http://www.embedded.com/rss/development-center/connectivity">Connectivity</a></li>   
+		                                <li><a href="http://www.embedded.com/rss/development-center/debug-and-optimization">Debug &amp; Optimization</a></li>   
+		                                <li><a href="http://www.embedded.com/rss/development-center/mcus-processors-and-socs">MCUs, Processors &amp; SoCs</a></li>   
+		                                <li><a href="http://www.embedded.com/rss/development-center/operating-systems">Operating Systems</a></li>   
+		                                <li><a href="http://www.embedded.com/rss/development-center/power-optimization">Power Optimization</a></li>   
+		                                <li><a href="http://www.embedded.com/rss/development-center/programming-languages-and-tools">Programming Languages &amp; Tools</a></li>   
+		                            </ul>									
+		                        </div>
+		                        <div class="six mobile-two columns">
+		                            <ul class="flyout">
+		                                <li><a href="http://www.embedded.com/rss/development-center/prototyping-and-development">Prototyping &amp; Development</a></li>   
+		                                <li><a href="http://www.embedded.com/rss/development-center/real-time-and-performance">Real-time &amp; Performance</a></li>   
+		                                <li><a href="http://www.embedded.com/rss/development-center/real-world-applications">Real-world Applications</a></li>   
+		                                <li><a href="http://www.embedded.com/rss/development-center/safety-and-security">Safety &amp; Security</a></li>   
+		                                <li><a href="http://www.embedded.com/rss/development-center/system-integration">System Integration</a></li>   
+		                                <li><a href="http://www.embedded.com/rss/blogs">Insights</a></li>
+		                                <li><a href="http://www.embedded.com/rss/products">Products</a></li>
+		                            </ul>									
+		                        </div>
+		                    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <!-- FOOTER LINKS ROW -->
+		<div class="row">
+		    <ul class="block-grid five-up hide-for-small">
+		        <li>
+		            <ul class="list-links">
+						<li class="section">Development Centers</li>
+						<li><a href="http://www.embedded.com/development">All Articles</a></li>
+		                <li><a href="http://www.embedded.com/development/configurable-systems">Configurable Systems</a></li>
+		                <li><a href="http://www.embedded.com/development/connectivity">Connectivity</a></li>
+		                <li><a href="http://www.embedded.com/development/debug-and-optimization">Debug &amp; Optimization</a></li>
+		                <li><a href="http://www.embedded.com/development/mcus-processors-and-socs">MCUs, Processors &amp; SoCs</a></li>
+		                <li><a href="http://www.embedded.com/development/operating-systems">Operating Systems</a></li>
+		                <li><a href="http://www.embedded.com/development/power-optimization">Power Optimization</a></li>
+		                <li><a href="http://www.embedded.com/development/programming-languages-and-tools">Programming Languages &amp; Tools</a></li>
+		                <li><a href="http://www.embedded.com/development/prototyping-and-development">Prototyping &amp; Development</a></li>
+		                <li><a href="http://www.embedded.com/development/real-time-and-performance">Real-time &amp; Performance</a></li>
+		                <li><a href="http://www.embedded.com/development/real-world-applications">Real-world Applications</a></li>
+		                <li><a href="http://www.embedded.com/development/safety-and-security">Safety &amp; Security</a></li>
+		                <li><a href="http://www.embedded.com/development/system-integration">System Integration</a></li>
+					</ul>
+		        </li>
+		        <li>
+		            <ul class="list-links">
+						<li class="section">Essentials &amp; Education</li>
+						<li><a href="http://www.embedded.com/products/all">Products</a></li>
+						<li><a href="http://www.embedded.com/news/all">News</a></li>
+						<li><a href="http://www.embedded.com/education-training/source-codes">Source Code Library</a></li>
+						<li><a href="http://www.embedded.com/education-training/webinars">Webinars</a></li>
+		                <li><a href="http://www.embedded.com/education-training/courses">Courses</a></li>
+		                <li><a href="http://www.embedded.com/education-training/tech-papers">Tech Papers</a></li>
+					</ul>
+		        </li>
+		        <li>
+		            <ul class="list-links">
+						<li class="section">Community</li>
+						<li><a href="http://www.embedded.com/insights">Insights</a></li>
+						<li><a href="http://forums.embedded.com/">Forums</a></li>
+						<li><a href="http://www.embedded.com/events">Events</a></li>
+					</ul>
+		        </li>
+		        <li>
+		            <ul class="list-links">
+		                <li class="section">Archives</li>
+		                <li><a href="http://www.embedded.com/magazines">Embedded Systems Programming / Embedded Systems Design Magazine</a></li>
+						<li><a href="http://www.embedded.com/archive/Embedded-com-Tech-Focus-Newsletter-Archive">Newsletters</a></li>
+						<li><a href="http://www.embedded.com/videos">Videos</a></li>
+						<li><a href="http://www.embedded.com/collections/all">Collections</a></li>
+					</ul>
+		        </li>
+		        <li>
+		            <ul class="list-links">
+						<li class="section">About Us</li>
+						<li><a href="http://www.embedded.com/aboutus">About Embedded</a></li>
+		                <li><a href="http://www.embedded.com/contactus">Contact Us</a></li>
+		                <li><a href="http://www.embedded.com/newsletters">Newsletters</a></li>
+		                <li><a href="http://www.embedded.com/advertising">Advertising</a></li>
+		                <li><a href="http://www.embedded.com/editorial-contributions">Editorial Contributions</a></li>
+		                <li><a href="http://www.embedded.com/site-map">Site Map</a></li>
+					</ul>
+		        </li>
+		    </ul>
+		    <div class="twelve columns show-for-small">
+		        <ul class="list-links">
+		            <li><a href="#">Design Centres</a></li>
+		            <li><a href="#">Essentials &amp; Education</a></li>
+		            <li><a href="#">Community</a></li>
+		            <li><a href="#">Archives</a></li>
+		            <li><a href="#">About Us</a></li>
+		        </ul>
+		    </div>
+		</div>
+		
+		<style type="text/css">
+				#footerblack li{
+                	font-size:0.8em;
+               	}
+                #footerblack #rightlinks ul {
+	                line-height: 0.7em !important;
+                }
+				#footerblack{				
+					padding-bottom:15px;
+				}
+				#footerblack ul.ubm-global-network{
+					margin : 10px 0;
+				}
+				#footerblack #left {
+				    width: 88px;
+				} 			
+		</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="Tracking_Demodulation_Embedded_files/ubm-global-footer.css" rel="stylesheet" type="text/css">
+		<!-- BEGIN BLACK FOOTER -->
+		  <div id="footerblack">  
+		  <ul class="ubm-global-network hide-for-small">
+					<li class="first"><b>GLOBAL NETWORK</b></li>
+					<li><a target="_blank" href="http://www.eetasia.com/">EE Times Asia</a></li>
+					<li><a target="_blank" href="http://www.eet-china.com/">EE Times China</a></li>
+					<li><a target="_blank" href="http://www.electronics-eetimes.com/">EE Times Europe</a></li>
+					<li><a target="_blank" href="http://www.eetindia.co.in/">EE Times India</a></li>
+					<li><a target="_blank" href="http://eetimes.jp/">EE Times Japan</a></li>
+					<li><a target="_blank" href="http://www.eetkorea.com/">EE Times Korea</a></li>
+					<li><a target="_blank" href="http://www.eettaiwan.com/">EE Times Taiwan</a></li>
+					<li><a target="_blank" href="http://www.ednasia.com/">EDN Asia</a></li>
+					<li><a target="_blank" href="http://www.ednchina.com/">EDN China</a></li>
+					<li><a target="_blank" href="http://ednjapan.com/">EDN Japan</a></li>
+					<li><a target="_blank" href="http://www.techonlineindia.com/">TechOnline India</a></li>
+					<li><a target="_blank" href="http://www.escbrazil.com.br/en/">ESC Brazil</a></li>
+					<li class="last"><a target="_blank" href="http://www.esc-india.com/">ESC India</a></li>
+				</ul>
+		    <div style="clear:both;"></div><!-- // to clear the right and left evenly // -->
+		    <!-- BLACK FOOTER LEFT SIDE -->
+		    <div id="left">
+		    <a href="http://tech.ubm.com/" target="_blank"><img src="Tracking_Demodulation_Embedded_files/ubm_tech_logo_footer_black88x111.jpg" alt="UBM Tech" id="UBM_global_footer_img" height="111" width="88" border="0"></a>
+		    </div><!-- /BLACK FOOTER LEFT SIDE -->
+		    <!--BLACK FOOTER rightlinks SIDE -->
+		    <div id="rightlinks">
+		      <ul class="hide-for-small">
+		        <li>FEATURED UBM TECH SITES:</li> 
+		        <li><a href="http://www.eetimes.com/" target="_blank">EE Times</a></li> | 
+		        <li><a href="http://www.ebnonline.com/" target="_blank">EBN</a></li> | 
+		        <li><a href="http://www.edn.com/" target="_blank">EDN</a></li> | 
+		        <li><a href="http://www.datasheets.com/search/index.jsp" target="_blank">DataSheets.com</a></li> |
+		        <!-- >li><a href="http://www.designnews.com/" target="_blank">Design News</a></li> | -->
+		        <li><a href="http://www.embedded.com/" target="_blank">Embedded</a></li> |
+		        <li><a href="http://techonline.com/" target="_blank">TechOnline</a></li> |
+		        <li><a href="http://www.planetanalog.com/" target="_blank">Planet Analog</a></li>
+		      </ul>
+		      <ul class="hide-for-small">
+		        <li>OUR MARKETS:</li> 
+		        <li><a href="http://tech.ubm.com/businesses/business-technology/" target="_blank">Business Technology</a></li> | 
+		        <li><a href="http://tech.ubm.com/businesses/electronics/" target="_blank">Electronics</a></li> | 
+		        <li><a href="http://tech.ubm.com/businesses/game-app-development/" target="_blank">Game &amp; App Development</a></li>
+		      </ul>
+		      <ul class="normal hide-for-small">
+		        <li><b>Working With Us:</b></li>
+		        <li><a href="http://createyournextcustomer.techweb.com/electronics-contacts/" target="_blank" class="normal">Advertising Contacts</a></li> | 
+		        <li><a href="http://e.ubmelectronics.com/events/" target="_blank" class="normal">Event Calendar</a></li> | 
+		        <li><a href="http://createyournextcustomer.techweb.com/media-kit/electronics-media-kit/" target="_blank" class="normal">Tech Marketing Solutions</a></li> | 
+		        <li><a href="http://tech.ubm.com/businesses/electronics/" target="_blank" class="normal">Corporate Site</a></li> | 
+		        <li><a href="http://www.embedded.com/electronics-blogs/spectra/4023287/undefined" target="_blank" class="normal" id="feedback_email">Contact Us / Feedback</a></li> 
+		      </ul>
+		      <ul class="blue">
+		        <li><a href="http://legal.us.ubm.com/terms-of-service/" target="_blank" class="blue">Terms of Service</a></li>  |
+		        <li><a href="http://legal.us.ubm.com/privacy-policy/" target="_blank" class="blue">Privacy Statement</a></li>  |
+		        <li><a href="http://legal.us.ubm.com/copyright-notice/" target="_blank" class="blue">Copyright © 2014 UBM Tech, All rights reserved</a></li>
+		      </ul>
+		    </div><!-- / BLACK FOOTER rightlinks -->
+		    <div style="clear:both;"></div><!-- // to clear the right and left evenly // -->
+		  </div><!-- END footerblack -->
+		<!-- / END BLACK FOOTER -->
+		<script type="text/javascript" src="Tracking_Demodulation_Embedded_files/ubm-global-footer.js"></script>
+		<script type="text/javascript" src="Tracking_Demodulation_Embedded_files/custom_tracking.js"></script>
+		<script type="text/javascript">
+		    $('#rightlinks a').click(function (event) {
+		        itc_tracking($(this), event);
+		    }); 
+		</script>        
+</footer>    </div>
+   
+	<!-- SiteCatalyst code version: H.16.
+Copyright 1997-2008 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<script type="text/javascript" src="Tracking_Demodulation_Embedded_files/h_s_code_remote.js"></script>
+
+<script type="text/javascript">
+			var referer = '';
+			var eVar23 = '';
+			var userAgent = '';
+			$.ajax({
+			   type: "GET",
+			   url: "/omniture",
+			   data: "referer="+encodeURIComponent(document.referrer),
+			   success: function(data){		   
+				   if (data != null)
+					{
+						referer = data.referer;
+						eVar23 = data.eVar23;
+						userAgent = data.userAgent;					
+					}
+			   },
+			   dataType: "json",
+			   async: false,
+			   cache: false
+	 }	
+	 );
+	
+	 
+	 </script>
+	 <script language="JavaScript" type="text/javascript">
+<!--
+		
+s.hier1="Embedded | Community | Blogs";
+s.pageName="";
+s.referrer=referer;
+s.server="";
+s.channel="embedded.com/electronics-blogs";
+s.pageType="";
+s.prop1="";
+s.prop2="4023287";
+s.prop3="Embedded | 4023287 | Tracking Demodulation";
+s.prop4="Tracking Demodulation";
+s.prop5="";
+s.prop6="";
+s.prop7="Don Morgan";
+s.prop10="";
+s.prop11="Blog";
+s.prop17="";
+s.prop19="Un-Registered";
+s.prop20="02/26/2001";
+
+
+/* Conversion Variables */
+s.campaign="";
+s.state="";
+s.zip="";
+s.events="event5";
+s.products="";
+s.purchaseID="";
+s.eVar1="";
+s.eVar2="";
+s.eVar3="";
+s.eVar4="";
+s.eVar5="";
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//-->	
+
+   function trackComment(){
+    	        var s=s_gi('cmpglobalvista'); 
+                s.evar24=s.prop7 +" | "+ s.prop4;  
+  			    s.events='event5,event9';
+  			    s.tl(this,'o','Article Comment Posted');
+          
+   }
+</script>
+<noscript><a href="http://www.omniture.com" title="Web Analytics"><img
+src="http://cmpglobalvista.112.2O7.net/b/ss/cmpglobalvista/1/H.16--NS/0"
+height="1" width="1" border="0" alt="" /></a></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.16 -->	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-20164576-1']);
+        _gaq.push(['_setDomainName', '.embedded.com']);
+	_gaq.push(['_trackPageview']);
+			_gaq.push(['_trackEvent']);
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+	<script type="text/javascript">
+    var uvOptions = {};
+    (function () {
+        var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
+        uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/vXhNDLnX1CtX07Kf4sAFw.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
+    })();
+</script>    <script type="text/javascript">
+_bizo_data_partner_id = "1322";
+</script>
+<script type="text/javascript">
+(function()
+{ var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript"; b.async = true; b.src = (window.location.protocol === "https:" ? "https://sjs" : "http://js") + ".bizographics.com/insight.min.js"; s.parentNode.insertBefore(b, s); }
+
+)();
+</script>
+<noscript>
+<img height="1" width="1" alt="" style="display:none;" src="//www.bizographics.com/collect/?pid=1322&fmt=gif" />
+</noscript>	<script src="Tracking_Demodulation_Embedded_files/jquery-ui.js" type="text/javascript"></script>
+	<script src="Tracking_Demodulation_Embedded_files/jquery_002.js" type="text/javascript"></script>
+	<script src="Tracking_Demodulation_Embedded_files/plugins.js" type="text/javascript"></script>
+	<script src="/js/embedded/app.js?v20130718.1" type="text/javascript"></script>
+	<script src="/js/embedded/script.js?v20130718.1" type="text/javascript"></script>
+	<script src="/js/embedded/jquery.prettyPhoto.js" type="text/javascript"></script>
+	<script src="/js/embedded/ubm.service.js?v20130718.1" type="text/javascript"></script>
+	<script src="/js/embedded/ubm.datehelper.js?v20130718.1" type="text/javascript"></script>
+	<script src="/js/embedded/ubm.comment.js?v20130718.1" type="text/javascript"></script>
+	<script src="/js/embedded/ubm.bookmark.js?v20130718.1" type="text/javascript"></script>
+	<script src="/js/embedded/ubm.list.js?v20130718.1" type="text/javascript"></script>
+	<script src="/js/embedded/ubm.content.js?v20130718.1" type="text/javascript"></script>
+	<script src="/js/embedded/main.js" type="text/javascript"></script>
+	<script src="/js/embedded/emb.partsdatasheet.js?v20130718.1" type="text/javascript"></script>
+	<script src="/js/embedded//fullcalendar.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="https://ins.techweb.com/beacon/js/beacon-min.js"></script>
+	<script type="text/javascript" src="/js/embedded/adroll.js"></script>
+	<script>
+	
+		var _doubleclickRand = Math.random() * 10000000000000000;
+		var beacon = new UBM.Beacon({ environment: 'p', apiKey: '7a85ceb41b22f6b8c4f0ea4b1298b85809f1c2227aefa21507e3e8724f9d0394' });
+		beacon.pageview();
+	</script>
+
+
+</body></html>

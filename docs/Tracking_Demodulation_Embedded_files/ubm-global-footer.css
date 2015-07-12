@@ -1,0 +1,143 @@
+/*
+html,body,div,span,applet,object,iframe,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+border:0;
+margin:0;
+padding:0;
+}
+use of the above ^ ^ deoends on the site */
+body {
+	margin:0;
+	padding:0;
+	background-color:#000;
+}
+#footerblack {	
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:.7em;
+	text-align:left;
+	background-color:#000;
+}
+#footerblack #rightlinks ul {	
+	color:#fff;
+	border-bottom:.1em solid #666;
+	margin:0;
+	padding:.3em 1em .3em .3em;
+}
+#footerblack ul.ubm-global-network, #footergrey ul.ubm-global-network {
+	border-bottom: solid .1em #999999;
+	border-top: solid .1em #999999;	
+    padding: 1em .5em;
+    color: #999999;
+    list-style: none;
+	text-align: center;
+	float:left;
+}
+#footerblack ul.ubm-global-network li , #footergrey ul.ubm-global-network li {
+	  display: inline;
+      line-height: 2em;
+      border-right: solid .1em #fff;
+      padding: 0 1em 0 0;
+      margin: 0 1em 0 0;
+	  color:#fff;
+}
+#footergrey ul.ubm-global-network li {
+	color:#666;
+	border-right: solid .1em #666;
+}
+#footerblack ul.ubm-global-network li.first , #footergrey ul.ubm-global-network li.first,
+#footerblack ul.ubm-global-network li.last , #footergrey ul.ubm-global-network li.last {
+	border-right: medium none;
+}
+#footerblack #rightlinks ul li a, #footerblack ul.ubm-global-network li a {
+	color:#fff;
+	text-decoration:none;
+	font-weight:bold;
+}
+#footerblack #rightlinks ul li a:hover, #footerblack ul.ubm-global-network li a:hover {
+	color:#999;
+	text-decoration:underline;
+}
+#footerblack #rightlinks ul.blue {
+	color:#9cf;
+	border-bottom:0em;
+	font-weight:normal;
+}
+#footerblack #rightlinks ul li a.blue {
+	color:#9cf;
+	font-weight:normal;
+}
+#footergrey {	
+	background-color:#e5e5e7;	
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:.7em;
+	text-align:left;
+}
+#footergrey #rightlinks ul {	
+	color:#666;
+	border-bottom:.1em solid #666;
+	margin:0;
+	padding:.3em 1em .3em .3em;
+}
+#footergrey #rightlinks ul li a, #footergrey ul.ubm-global-network li a {
+	color:#666;
+	text-decoration:none;
+	font-weight:bold;
+}
+#footergrey #rightlinks ul li a:hover, #footergrey ul.ubm-global-network li a:hover {
+	color:#333;
+	text-decoration:underline;
+}
+#footergrey #rightlinks ul.blue {
+	color:#369;
+	border-bottom:0em;
+	font-weight:normal;
+}
+#footergrey #rightlinks ul li a.blue {
+	color:#369;
+	font-weight:normal;
+}
+#footergrey #rightlinks ul.normal {
+	font-weight:normal;
+}
+#footergrey #rightlinks ul li a.normal {
+	color:#666;
+	font-weight:normal;
+}
+#footerblack #left,
+#footergrey #left {
+	float:left;	
+	margin:0;
+	padding:0;
+}
+#footerblack #rightlinks,
+#footergrey #rightlinks {
+	float:left;
+	margin-top:1em;
+	padding:0;
+}
+#footerblack #rightlinks ul li,
+#footergrey #rightlinks ul li {
+	display:inline;
+}
+#footerblack #rightlinks ul.normal,
+#footerblack #rightlinks ul li a.normal {
+	color:#fffff;
+	font-weight:normal;
+}
+@media screen and (max-width: 780px)   
+{
+    .hide-for-small {
+        display: none;
+    }
+    #footerblack #left,
+        #footergrey #left,
+    #footerblack #rightlinks,
+        #footergrey #rightlinks {
+        margin-left: auto;margin-right: auto;text-align: center;width: 100%;	
+    }        
+}
+@media screen and (max-width: 920px) {    
+    #footerblack #rightlinks,
+        #footergrey #rightlinks {
+        float: none;                
+    }            
+}

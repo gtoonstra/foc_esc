@@ -1,0 +1,73 @@
+
+/*CSS SPECFIC TO EMBEDDED LIGHTBOX*/
+#TWLightBoxPanel {
+	width:630px !important;
+}
+#nextGenLoginContainer #registrationForm fieldset{
+	width:548px !important;
+}
+.embedded #registerlink2{display:none;}
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"]
+{
+    box-shadow: none !important;
+    color: #000000 !important;
+    display: block !important;
+    height: 24 !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    transition: none;
+    width: 100%;
+}
+textarea{
+	 box-shadow: none !important;
+    color: #000000 !important;
+    display: block ;
+    height: 24 ;
+    margin: 0px !important;
+    padding: 0px !important;
+    transition: none;
+    width: 100%;
+}
+.embedded #registrationForm .elementType_checkbox input{
+margin-left:0px !important;
+margin-top:0px !important;
+}
+
+#nextGenLoginContainer.register
+{
+height:488px !important;
+}
+.ngLoadingScreen{
+height:50px!important;
+}
+#nextGenLoginContainer {
+    height: 426px!important;
+}
+/*CSS SPECFIC TO EMBEDDED LIGHTBOX*/
+
+/*WELCOME CSS*/
+.greetings{
+ font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.6;
+    margin-bottom: 17px;
+	float: right;
+    margin-right: 153px !important;
+}
+/*WELCOME CSS*/
+
+.social_media #___plusone_0, #___plusone_1{
+	
+	position: static !important;
+}
+.registerlogo {
+    margin: 10px 20px;
+    text-align: center;
+}
+.registerlogo .stlogo {
+    background: url("http://cdn.embedded.com/Content/images/structure/embedded-logo.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 58px;
+    width: 331px;
+	 margin-left: 130px;
+}

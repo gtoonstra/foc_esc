@@ -1,0 +1,891 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html style="height: 100%;"><head>
+<script type="text/javascript" src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/selectuser.js"></script>
+<title> 
+Modeling and Simulation of BLDCM Using MATLAB/SIMULINK</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/style.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.linespace {
+	line-height: 21px;
+	text-decoration: none;
+}
+-->
+</style>
+<script type="text/javascript" src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/jquery-latest.js"></script> 
+<script type="text/javascript"> 
+$(document).ready(function(){
+
+//Page Flip on hover
+
+	$("#pageflip").hover(function() {
+		$("#pageflip img , .msg_block").stop()
+			.animate({
+				width: '307px', 
+				height: '319px'
+			}, 500); 
+		} , function() {
+		$("#pageflip img").stop() 
+			.animate({
+				width: '90px', 
+				height: '93px'
+			}, 220);
+		$(".msg_block").stop() 
+			.animate({
+				width: '90px', 
+				height: '90px'
+			}, 200);
+	});
+
+	
+});
+</script> 
+<style type="text/css">
+#pageflip {
+	position: relative;
+}
+#pageflip img {
+	width: 90px; height: 93px;
+	z-index: 99;
+	position: absolute;
+	right: 0; top: 0;
+	-ms-interpolation-mode: bicubic;
+}
+#pageflip .msg_block {
+	width: 90px; height: 90px;
+	position: absolute;
+	z-index: 50;
+	right: 0; top: 0;
+	background: url(../cornerad.jpg) no-repeat right top;
+	text-indent: -9999px;
+}
+</style>
+<link href="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/translateelement.css" charset="UTF-8" rel="stylesheet" type="text/css"><script src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/main.js" charset="UTF-8" type="text/javascript"></script><script src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/element_main.js" charset="UTF-8" type="text/javascript"></script><style>.goog-te-ftab-float {z-index:9999999; overflow:visible; position:fixed; _position:absolute;top:0px; _top:expression((0+(hack1=document.documentElement.scrollTop||document.body.scrollTop))+'px');left:20px; _left:expression((20+(hack2=document.documentElement.scrollLeft||document.body.scrollLeft))+'px');bottom:auto;right:auto;}</style></head>
+<body style="position: relative; min-height: 100%; top: 0px;" leftmargin="0" topmargin="0" bgcolor="#44433F" marginheight="0" marginwidth="0"><div style="visibility: hidden; position: absolute; overflow: hidden; padding: 0px; width: 0px; left: 0px; top: 0px;" id="WzTtDiV"></div>
+<div id="pageflip">
+	<a href="http://feedburner.google.com/fb/a/mailverify?uri=1812-5654" target="_blank">
+		<img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/page_flip.png" alt="Subscribe Now" border="0">
+		<span class="msg_block">Subscribe Today</span>	</a></div>
+ <script type="text/javascript" src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/wz_tooltip.js"></script>
+ 
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    floatPosition: google.translate.TranslateElement.FloatPosition.TOP_LEFT
+  });
+}
+</script><script src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/element.js"></script>
+<table align="center" border="0" width="959" cellpadding="0" cellspacing="0">
+  <tbody><tr> 
+    <td width="249"> <img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/fulltext_01.gif" alt="" height="69" width="249"></td>
+    <td colspan="2" rowspan="2"> <img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/fulltext_02.gif" alt="" height="87" width="709"></td>
+    <td width="1"> <img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/spacer.gif" alt="" height="69" width="1"></td>
+  </tr>
+  <tr> 
+    <td rowspan="5"> <img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/fulltext_03.gif" alt="" height="183" width="249"></td>
+    <td> <img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/spacer.gif" alt="" height="18" width="1"></td>
+  </tr>
+  <tr> 
+    <td rowspan="4" width="405"> <img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/fulltext_04.gif" alt="" height="165" width="405"></td>
+    <td width="304"> <img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/fulltext_05.gif" alt="Abstract" usemap="#Map" border="0" height="44" width="304"></td>
+    <td> <img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/spacer.gif" alt="" height="44" width="1"></td>
+  </tr>
+  <tr> 
+    <td> <img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/fulltext_06.gif" alt="Fulltext PDF" usemap="#Map2" border="0" height="40" width="304"></td>
+    <td> <img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/spacer.gif" alt="" height="40" width="1"></td>
+  </tr>
+  <tr> 
+    <td> <img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/fulltext_07.gif" alt="References" usemap="#Map3" border="0" height="39" width="304"></td>
+    <td> <img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/spacer.gif" alt="" height="39" width="1"></td>
+  </tr>
+  <tr> 
+    <td> <img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/fulltext_08.gif" alt="" usemap="#Map4" border="0" height="42" width="304"></td>
+    <td> <img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/spacer.gif" alt="" height="42" width="1"></td>
+  </tr>
+  <tr> 
+    <td colspan="3" bgcolor="#FFFFFF" valign="top"><table border="0" width="958" cellpadding="7" cellspacing="3">
+        <tbody><tr>
+          <td width="958"><table border="0" width="100%" cellpadding="3" cellspacing="2">
+              <tbody><tr> 
+                <td colspan="2" class="linespace"> </td>
+              </tr>
+              <tr> 
+                <td colspan="2"><font color="#999999"><strong> <br>
+                  <font color="#333333">Research Article</font><br>
+                  </strong></font></td>
+              </tr>
+              <tr> 
+                <td colspan="2"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"> 
+                  <strong>Modeling and Simulation of BLDCM Using MATLAB/SIMULINK</strong> 
+                  <p></p>
+                  </font></td>
+              </tr>
+              <tr> 
+                <td colspan="2"> <strong> 
+                                                                                                                              <a href="http://ascidatabase.com/author.php?author=C.&amp;last=Gencer" target="_blank" class="links" title="Click to find out more papers by C. Gencer"> 
+                  C. Gencer</a> 
+                                                                        
+                                                                        
+                                                                        
+                  and <a href="http://ascidatabase.com/author.php?author=M.&amp;last=Gedikpinar" target="_blank" class="links" title="Click to find out more papers by M. Gedikpinar"> 
+                  M. Gedikpinar</a> 
+                                                                        </strong> </td>
+              </tr>
+              <tr> 
+                <td colspan="2">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td colspan="2"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><strong>ABSTRACT</strong></font> 
+                  <a name="ab" id="ab"></a> 
+                  <hr size="1"></td>
+              </tr>
+              <tr valign="top"> 
+                <td class="linespace" bgcolor="#F4F4F4" width="100%"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+ 
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+The aim of this study was to modeling of three phases Brushless DC Motor
+ (BLDCM) with MATLAB/SIMULINK package program. Brushless DC motors 
+(BLDCM) have important advantages according to brushed DC motors and 
+induction motors. They have better speed/torque characteristics, high 
+efficiency, high  dynamic  response,  small  size construction and so 
+on. The design and analysis of complex power electronic systems such as 
+motor drives is usually done using a modern simulation software, such as
+ MATLAB/SIMULINK, SPICE, EMTP, SABER, SPECTRE, SIMPLORER, etc., which 
+can provide accurate predictions of the systems behavior in reality.    
+              </font> </td>
+                <td class="linespace" width="200">              
+<table border="0" width="230" cellpadding="5" cellspacing="0">
+  <tbody><tr> 
+    <td bgcolor="#000000"><strong><font color="#FFFFFF">Services</font></strong></td>
+  </tr>
+  <tr> 
+    <td><a href="http://ascidatabase.com/ascidetail.php?doi=jas.2006.688.691&amp;kw=" target="_blank">Related 
+      Articles in ASCI</a></td>
+  </tr>
+  <tr> 
+    <td><a href="http://ascidatabase.com/ascidetail.php?doi=jas.2006.688.691&amp;kw=">Similar 
+      Articles in this Journal</a></td>
+  </tr>
+  <tr> 
+    <td><a href="http://scialert.net/abstract/gscholar.php?ti=Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB/SIMULINK" target="_blank">Search 
+      in Google Scholar</a></td>
+  </tr>
+  <tr> 
+    <td><a href="http://scialert.net/fulltext/citedby.php?doi=jas.2006.688.691&amp;org=11">View 
+      Citation </a></td>
+  </tr>
+  <tr> 
+    <td><a href="http://scialert.net/fulltext/reportcitation.php?doi=jas.2006.688.691&amp;org=11">Report 
+      Citation</a></td>
+  </tr>
+  <tr> 
+    <td><hr size="3" color="#000000"></td>
+  </tr>
+</tbody></table>
+<map name="Mapz">
+  <area shape="rect" coords="4,4,34,33" href="#">
+  <area shape="rect" coords="44,4,73,33" href="#">
+  <area shape="rect" coords="82,5,113,34" href="#">
+  <area shape="rect" coords="118,2,150,34" href="#">
+  <area shape="rect" coords="157,2,188,33" href="#">
+  <area shape="rect" coords="194,2,229,33" href="#">
+</map>
+</td>
+              </tr>
+ 
+              <tr> 
+                <td colspan="2">&nbsp;</td>
+              </tr>
+<tr> 
+                <td colspan="2">
+                                                                        
+                                                      				   
+                                                                        
+                                                                        
+                                                                        
+                   
+                                                                      <table border="0" width="100%" cellpadding="0" cellspacing="7">
+                    <tbody><tr>
+                      <td bgcolor="#44433F" width="3">&nbsp;</td>
+                      <td width="100%"> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"><strong>How 
+                        to cite this article:</strong></font><br>
+                        <br>
+                        C. Gencer  and M. Gedikpinar, 2006. Modeling and Simulation of BLDCM Using MATLAB/SIMULINK. <i>Journal of Applied Sciences, 6: 688-691.</i><br> <br> <strong>DOI:</strong> <a href="http://dx.doi.org/10.3923/jas.2006.688.691" target="_blank">10.3923/jas.2006.688.691</a> <br> <br> <strong>URL:</strong> <a href="http://scialert.net/abstract/?doi=jas.2006.688.691" target="_blank">http://scialert.net/abstract/?doi=jas.2006.688.691 
+                        </a></td>
+                    </tr>
+                  </tbody></table></td>
+              </tr>
+              <tr> 
+                <td colspan="2"><hr size="1"></td>
+              </tr>
+              <tr> 
+                <td colspan="2" class="linespace"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+ 
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                      
+                                                                        
+                  
+                                                                        
+                                                                        
+                               
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                        <p><b>INTRODUCTION</b></p><p>During the last 
+decade, classical and modern control system design methods, involving 
+advanced mathematical techniques and time-consuming calculations have 
+been greatly aided by software packages such as MATLAB/SIMULINK, SPICE, 
+EMTP, SABER, SPECTRE, SIMPLORER, etc., which can provide accurate 
+predictions of the systems behaviour in reality. In recent years, BLDCM 
+has become a popular choice in industry applications such as automotive,
+ aerospace, consumer, medical, instrumentation. BLDCM have advantages 
+over brushed DC motors and induction motors. They have better speed 
+versus torque characteristics, high efficiency, high dynamic response 
+and so on. Also, torque delivered to the motor size is higher, making it
+ useful in applications where space and weight are critical factors. 
+However, BLDCM need position information for torque producing. The 
+position information is usually obtained via measurement using device 
+such as position encoder, resolver or Hall Effect sensors. These devices
+ increase machine size, cost and rotor inertia, additionally also make 
+the drive system complex and mechanically robustness<sup>[1,2]</sup>.</p><p>A
+ three phase BLDCM has three phase windings on the stator and permanent 
+magnet rotor. The difference between this machine and the Permanent 
+Magnet Synchronous Motor (PMSM) is that the machine back EMF is 
+trapezoidal<sup>[3]</sup>. Some confusion exists as to the correct 
+models that should be used in each case. The BLDCM is very similar to 
+the standard wound rotor synchronous machine except that the BLDCM has 
+no damper windings and excitation is provided by a permanent magnet 
+instead of a field winding<sup>[4,5]</sup>.</p><p><b>MATHEMATICAL MODEL OF BLDCM</b></p><p><a href="#f1">Figure 1</a>
+ shows a dynamic equivalent circuit of the BLDCM. In simulation, the 
+common “y” connection of stator windings, three phase balanced system 
+and airgap uniform are assumed<sup>[5]</sup>.</p><p>For this model, the stator phase voltage equations in the stator reference frame of the BLDCM are as <a href="#e1">Eq. 1</a>;</p><a name="e1"></a><table border="0" width="100%"><tbody><tr><td width="95%"><div align="center"><img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/eq1-2k6-688-691.gif" height="63" width="324"></div></td><td width="5%">(1)</td></tr></tbody></table><a name="f1"></a><br>
+<table align="center" border="0" width="395">
+  <tbody><tr><td colspan="2"><div align="center"><img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/fig1-2k6-688-691.gif" height="237" width="282"></div></td></tr><tr>
+    <td valign="baseline" width="51">Fig. 1:</td>
+    <td width="334">Equivalent circuit of BLDCM</td>
+  </tr></tbody></table>
+
+<a name="f2"></a><br>
+<table align="center" border="0" width="602">
+  <tbody><tr><td colspan="2"><div align="center"><img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/fig2-2k6-688-691.gif" height="274" width="596"></div></td></tr><tr>
+    <td valign="baseline" width="51">Fig. 2:</td>
+    <td width="541">Block diagram of BLDCM</td>
+  </tr></tbody></table>
+
+<p>In here, back EMF is depend to magnetic flux in rotor because of permanent magnet with speed of rotor <a href="#e2">Eq. 2</a>.</p><a name="e2"></a><table border="0" width="100%"><tbody><tr><td width="95%"><div align="center"><img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/eq2-2k6-688-691.gif" height="130" width="180"></div></td><td width="5%">(2)</td></tr></tbody></table><p>Motor equations can be expressed in state-space form as <a href="#e3">Eq. 3</a></p><a name="e3"></a><table border="0" width="100%"><tbody><tr><td width="95%"><div align="center"><img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/eq3-2k6-688-691.gif" height="191" width="260"></div></td><td width="5%">(3)</td></tr></tbody></table><p>Electrical exist power of motor can be calculated using <a href="#e4">Eq. 4</a>.</p><a name="e4"></a><table border="0" width="100%"><tbody><tr><td width="95%"><div align="center"><img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/eq4-2k6-688-691.gif" height="18" width="118"></div></td><td width="5%">(4)</td></tr></tbody></table><p>Electromagnetic torque can be calculated as <a href="#e5">Eq. 5</a>.</p><a name="e5"></a><table border="0" width="100%"><tbody><tr><td width="95%"><div align="center"><img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/eq5-2k6-688-691.gif" height="43" width="53"></div></td><td width="5%">(5)</td></tr></tbody></table><p>Electromagnetic torque to be motor dynamic equations can be expressed as <a href="#e6">Eq. 6</a>.</p><a name="e6"></a><table border="0" width="100%"><tbody><tr><td width="95%"><div align="center"><img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/eq6-2k6-688-691.gif" height="47" width="198"></div></td><td width="5%">(6)</td></tr></tbody></table><p><a href="#e6">Equation 6</a> can be arranged as <a href="#e7">Eq. 7</a> in state-space form (2).</p><a name="e7"></a><table border="0" width="100%"><tbody><tr><td width="95%"><div align="center"><img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/eq7-2k6-688-691.gif" height="50" width="207"></div></td><td width="5%">(7)</td></tr></tbody></table><p>Speed of motor is proportional position of rotor <a href="#e8">Eq. 8</a>.</p><a name="e8"></a><table border="0" width="100%"><tbody><tr><td width="95%"><div align="center"><img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/eq8-2k6-688-691.gif" height="36" width="64"></div></td><td width="5%">(8)</td></tr></tbody></table><p><a href="#f2">Figure 2</a> shows block diagram of <a href="http://www.scialert.net/asci/result.php?searchin=Keywords&amp;cat=&amp;ascicat=ALL&amp;Submit=Search&amp;keyword=mathematical+model" target="_blank" title="Find more articles at http://www.scialert.net/asci/result.php?searchin=Keywords&amp;cat=&amp;ascicat=ALL&amp;Submit=Search&amp;keyword=mathematical+model (mathematical model)"><strong><font color="#000000">mathematical model</font></strong></a> in three phases BLDCM.</p><p><b>SIMULATION OF THE BLDCM</b></p><p>The model of MATLAB/SIMULINK was shown in <a href="#f3">Fig. 3</a>
+ according to rotor reference frame of the BLDCM for simulation of motor
+ using equations which have been given above. Parameters which have been
+ belong to motor used simulation are as below;</p><p>R = 11.05 ohm, L = 0.0215 henri, P = 6, J = 0.0001, B = 0.001 φ = 0.11weber, M = 0.002 henri, T<sub>L</sub> = 0.1 Newton, V = 2*10/π</p><p>i<sub>a</sub>, i<sub>b</sub>, i<sub>c</sub> currents in the result of simulation has been given in <a href="#f4">Fig. 4</a>.</p><p>Speed of the BLDCM in the result of simulation has been given in <a href="#f5">Fig. 5</a>.</p><a name="f3"></a>
+<table align="center" border="0" width="432">
+  <tbody><tr><td colspan="2"><div align="center"><img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/fig3-2k6-688-691.gif" height="410" width="343"></div></td></tr><tr>
+    <td valign="baseline" width="51">Fig. 3:</td>
+    <td width="371">MATLAB/SIMULINK model of the BLDCM</td>
+  </tr></tbody></table>
+
+<a name="f4"></a><br>
+<table align="center" border="0" width="370">
+  <tbody><tr><td colspan="2"><div align="center"><img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/fig4-2k6-688-691.gif" height="204" width="261"></div></td></tr><tr>
+    <td valign="baseline" width="51">Fig. 4:</td>
+    <td width="309">i<sub>a</sub>, i<sub>b</sub>, i<sub>c</sub> motor phase currents</td>
+  </tr></tbody></table>
+
+<a name="f5"></a><br>
+<table align="center" border="0" width="370">
+  <tbody><tr><td colspan="2"><div align="center"><img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/fig5-2k6-688-691.gif" height="234" width="228"></div></td></tr><tr>
+    <td valign="baseline" width="51">Fig. 5:</td>
+    <td width="309">Speed of the BLDCM</td>
+  </tr></tbody></table>
+
+<a name="f6"></a><br>
+<table align="center" border="0" width="358">
+  <tbody><tr><td colspan="2"><div align="center"><img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/fig6-2k6-688-691.gif" height="235" width="226"></div></td></tr><tr>
+    <td valign="baseline" width="49">Fig. 6:</td>
+    <td width="299">Position of the BLDCM</td>
+  </tr></tbody></table>
+
+<p>Position of the BLDCM in the result of simulation has been given in <a href="#f6">Fig. 6</a>.</p><p><b>CONCLUSIONS</b></p><p>In
+ this study, MATLAB/SIMULINK based modeling and simulation of the BLDCM 
+is presented. This model can be provide a guide in the modeling of the 
+BLDCM for investigators. This model has a flexible structure and enables
+ to users to change motor parameters easily.</p>
+<p><b>NOMENCLATURE</b></p>
+<table border="0" width="100%">
+  <tbody><tr> 
+    <td width="8%">B</td>
+    <td width="92%">Friction constant, N/rad/s</td>
+  </tr>
+</tbody></table>
+<table border="0" width="100%">
+  <tbody><tr> 
+    <td width="8%">i<sub>a</sub>, i<sub>b</sub>, i<sub>c</sub></td>
+    <td width="92%">Motor phase currents, A</td>
+  </tr>
+</tbody></table>
+<table border="0" width="100%">
+  <tbody><tr> 
+    <td width="8%">J</td>
+    <td width="92%">Moment of inertia, kg m<sup>2</sup>
+</td>
+  </tr>
+</tbody></table>
+<table border="0" width="100%">
+  <tbody><tr> 
+    <td width="8%">L<sub></sub></td>
+    <td width="92%">Inductances, H</td>
+  </tr>
+</tbody></table>
+<table border="0" width="100%">
+  <tbody><tr> 
+    <td width="8%">M</td>
+    <td width="92%">Mutual inductance, H</td>
+  </tr>
+</tbody></table>
+<table border="0" width="100%">
+  <tbody><tr> 
+    <td width="8%">P</td>
+    <td width="92%">Number of pole pairs</td>
+  </tr>
+</tbody></table>
+<table border="0" width="100%">
+  <tbody><tr> 
+    <td width="8%">R</td>
+    <td width="92%">Stator resistance, Ω</td>
+  </tr>
+</tbody></table>
+<table border="0" width="100%">
+  <tbody><tr> 
+    <td height="24" width="8%">T<sub>e</sub></td>
+    <td width="92%">Electric torque, Nm</td>
+  </tr>
+</tbody></table>
+<table border="0" width="100%">
+  <tbody><tr> 
+    <td width="8%">T<sub>y</sub></td>
+    <td width="92%">Load torque, Nm</td>
+  </tr>
+</tbody></table>
+<table border="0" width="100%">
+  <tbody><tr> 
+    <td width="8%">U<sub>a</sub>, U<sub>b, </sub>U<sub>c</sub> </td>
+    <td width="92%">Phase voltages, V</td>
+  </tr>
+</tbody></table>
+<table border="0" width="100%">
+  <tbody><tr> 
+    <td width="8%">ω<sub>r</sub></td>
+    <td width="92%">Rotor speed, Rad/s</td>
+  </tr>
+</tbody></table>
+<table border="0" width="100%">
+  <tbody><tr> 
+    <td width="8%">θ<sub>r</sub></td>
+    <td width="92%">Angle between stator and rotor, rad</td>
+  </tr>
+</tbody></table>
+				
+                  </font></td>
+              </tr>
+                                      <tr> 
+                <td colspan="2" class="linespace"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><strong> 
+                  REFERENCES<a name="ref" id="ref"></a></strong></font></td>
+              </tr>
+              <tr>
+                <td colspan="2" class="linespace">
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                             
+                                                            Demirbao, �.
+ and �. Gen�er, 2004. <a name="9642_con"></a>Matlab/Simulink based 
+modeling and simulation of permanent magnet synchronous motor drive. 
+Proceedings of the 2nd International Conference on Technical and 
+Physical Problems in Power Engineering, 2004, Tabriz, Iran, pp: 645-649.<br><br>Lee, B.K. and M. Ehsani, 2003. <a name="230295_ja"></a>Advanced simulation model for brushless DC motor drives. Electric Power Comp. Syst., 31: 841-868.<br><font size="1"><a href="http://www.informaworld.com/smpp/ftinterface?content=a713848014&amp;rt=0&amp;format=pdf" target="_blank" class="botlinks">Direct Link</a>&nbsp;&nbsp;|&nbsp;&nbsp;</font><br><br>Nasar, S.A., 1993. <a name="23161_b"></a>Permanent Magnet, Reluctance and Self-Synchronous Motors.  CRC Press, New York, pp: 159-210.<br><br>Pillay, P. and R. Krishnan, 1989. <a name="230293_ja"></a>Modeling,
+ simulation and analysis of permanent-magnet motor drives. II. The 
+brushless DC motor drive. IEEE Trans. Ind. Applic., 25: 274-279.<br><font size="1"><a href="http://dx.doi.org/10.1109/28.25542" target="_blank" class="botlinks">CrossRef</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://ieeexplore.ieee.org/Xplore/login.jsp?url=http%3A%2F%2Fieeexplore.ieee.org%2Fiel1%2F28%2F966%2F00025542.pdf%3Farnumber%3D25542&amp;authDecision=-203" target="_blank" class="botlinks">Direct Link</a>&nbsp;&nbsp;|&nbsp;&nbsp;</font><br><br>Qinghua, L., M.A. Jabbar and A.M. Khambdkone, 2002. <a name="230294_ja"></a>Design optimization of wide-speed permanent magnet synchronous motors. IEEE Power Elect. Mach. Drives, 487: 404-408.<br><font size="1"><a href="http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=1031727" target="_blank" class="botlinks">Direct Link</a>&nbsp;&nbsp;|&nbsp;&nbsp;</font><br><br></td>
+              </tr>            </tbody></table></td>
+        </tr>
+      </tbody></table></td>
+    <td> <img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/spacer.gif" alt="" height="311" width="1"></td>
+  </tr>
+  <tr> 
+    <td colspan="3"> <img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/fulltext_10.gif" alt="" height="11" width="958"></td>
+    <td> <img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/spacer.gif" alt="" height="11" width="1"></td>
+  </tr>
+</tbody></table>
+<div align="center"> <font face="Geneva, Arial, Helvetica, sans-serif" size="1" color="#FFFFFF">©&nbsp;
+  2015  Science Alert. All Rights Reserved</font><br>
+  <map name="Map2" id="Map2">
+    <area shape="rect" coords="27,10,153,31" href="http://scialert.net/qredirect.php?doi=jas.2006.688.691&amp;linkid=pdf" target="_blank" alt="Fulltext PDF">
+  </map>
+  <map name="Map3" id="Map3">
+    <area shape="rect" coords="28,9,122,29" href="#ref" alt="References">
+  </map>
+  <map name="Map" id="Map">
+    <area shape="rect" coords="30,14,100,33" href="#ab" alt="Abstract">
+  </map>
+</div>
+
+<map name="Map4" id="Map4">
+<area shape="rect" coords="30,12,123,29" href="http://scialert.net/fulltext/xml.php?doi=jas.2006.688.691">
+</map><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="Modeling%20and%20Simulation%20of%20BLDCM%20Using%20MATLAB_SIMULINK_files/translate-32.png" height="20" width="20"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Original text</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Contribute a better translation</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div style="display: none;" class="status-message"></div></div>
+
+<div class=" goog-te-ftab-float" id=":0.floatContainer" style="box-sizing: content-box; width: 89px; height: 24px;"><iframe id=":0.container" src="javascript:''" class="goog-te-ftab-frame skiptranslate" style="visibility: visible; box-sizing: content-box; width: 89px; height: 24px;" frameborder="0"></iframe></div></body></html>

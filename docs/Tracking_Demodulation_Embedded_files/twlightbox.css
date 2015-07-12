@@ -1,0 +1,667 @@
+@CHARSET "ISO-8859-1";
+/*Default*/
+#TWLightBoxPanel #topLoginHeader {background: url(http://twimgs.com/custom/csb/images/nextgen/nextgen_container_header_bg.gif) no-repeat;}
+#TWLightBoxPanel #nextGenLoginContainer {background: url("http://twimgs.com/custom/csb/images/nextgen/nextgen_container_mid_bg.gif") repeat-y scroll 0 0 transparent;}
+#TWLightBoxPanel #nextGenFooterContainer {background: url("http://twimgs.com/custom/csb/images/nextgen/nextgen_container_footer_bg.gif") no-repeat scroll 0 0 transparent;}
+#TWLightBoxPanel #nextGenContainer_closeButton_inner {background: url("http://twimgs.com/custom/csb/images/nextgen/nextgen_close_btn.gif") no-repeat scroll 0 0 transparent;}
+#ngLoadingScreen {background: url("http://twimgs.com/custom/csb/images/blue_loading_bar.gif") no-repeat scroll 625px 15px #EEEEEE;border: 4px solid #007BA7;}
+#ngErrorScreen {border: 4px solid #007BA7;}
+
+
+/*EDN*/
+#TWLightBoxPanel.edn #topLoginHeader {background:#FFFFFF; border-top: 8px solid #C6151F;}
+#TWLightBoxPanel.edn #nextGenLoginContainer {background:none repeat scroll 0 0 #FFFFFF;overflow: auto;}
+#TWLightBoxPanel.edn #nextGenFooterContainer {background:none repeat scroll 0 0 #FFFFFF;}
+#TWLightBoxPanel.edn .nextGenContainer_title {color:#C6151F; float:left; font-size:14px; font-weight:bold; height:20px; padding:0 5px;}
+#TWLightBoxPanel.edn .nextGenContainer_closeButton {padding:0; float:right;}
+#TWLightBoxPanel.edn #nextGenContainer_closeButton_inner {background-color: #CCCCCC !important;background: url("/css/images/dialog_close.png") no-repeat scroll 0 0 transparent; background-size:19px auto; height:19px; width:19px;}
+.edn #ngLoadingScreen {background: url("/css/images/ajax-loader-edn.gif") no-repeat scroll 625px 15px #EEEEEE;border: 3px solid #C6151F;}
+#ngErrorScreen .edn{border: 4px solid #007BA7;}
+.edn #nextGenLoginContainer {text-align: left;display:block;padding: 5px 5px 10px;width: 600px; height: 400px;}
+.edn #nextGenLoginForm #submit {
+    background: url("/css/images/edn_login.png") repeat scroll 0 0 transparent;
+    border: medium none;
+    height: 32px;
+    margin-left: 75px;
+    width: 64px;
+}
+.edn #nextGenContainer {height:665px; overflow:hidden;width: 571px;}
+.edn #nextGenLoginContainer #register_full_container_inner .contents_left_forgotpw {padding-left: 42px;}
+
+/*Embedded*/
+#TWLightBoxPanel.embedded #topLoginHeader {background:#FFFFFF; border-top: 8px solid #4996CF;padding: 0px 5px 0px; height:28px; width:600px;}
+#TWLightBoxPanel.embedded #nextGenLoginContainer {background: none repeat scroll 0 0 #FFFFFF; width:600px; height:462px !important; overflow:auto;}
+#TWLightBoxPanel.embedded #nextGenFooterContainer {background:none repeat scroll 0 0 #FFFFFF;}
+#TWLightBoxPanel.embedded .nextGenContainer_title {color:#4996CF; float:left; font-size:14px; font-weight:bold; height:20px; padding:0 5px;}
+#TWLightBoxPanel.embedded .nextGenContainer_closeButton {padding:0; float:right;}
+#TWLightBoxPanel.embedded #nextGenContainer_closeButton_inner {background-color: #CCCCCC !important; background:url("/css/images/dialog_close.png") no-repeat scroll 0 0 transparent; background-size:19px auto; height:19px; width:19px;}
+ .embedded #ngLoadingScreen{background: url("/css/images/ajax-loader-embedded.gif") no-repeat scroll 625px 15px #EEEEEE;border: 3px solid #4996CF;}
+#ngErrorScreen .embedded{border: 4px solid #007BA7;}
+.embedded #nextGenLoginContainer {text-align: left;display:block;padding: 5px 5px 10px;width: 774px; height: 400px;}
+.embedded #nextGenLoginForm #submit {
+    background: url("/css/images/login_emb.png") repeat scroll 0 0 transparent;
+    border: medium none;
+    height: 32px;
+    margin-left: 75px;
+    width: 64px;
+}
+.embedded #nextGenContainer {height:705px; overflow:hidden;width: 571px;}
+.embedded #nextGenLoginContainer #register_full_container_inner .contents_left_forgotpw {padding-left: 42px;}
+
+/*DDJ*/
+#TWLightBoxPanel.drdobbs #topLoginHeader{background: url(http://twimgs.com/custom/csb/images/nextgen/nextgen_container_header_bg.gif) no-repeat;}
+#TWLightBoxPanel.drdobbs #nextGenLoginContainer{background: url("http://twimgs.com/custom/csb/images/nextgen/nextgen_container_mid_bg.gif") repeat-y scroll 0 0 transparent;}
+#TWLightBoxPanel.drdobbs #nextGenFooterContainer{background: url("http://twimgs.com/custom/csb/images/nextgen/nextgen_container_footer_bg.gif") no-repeat scroll 0 0 transparent;}
+#TWLightBoxPanel.drdobbs #nextGenContainer_closeButton_inner{background: url("http://twimgs.com/custom/csb/images/nextgen/nextgen_close_btn.gif") no-repeat scroll 0 0 transparent;}
+#ngLoadingScreen.drdobbs {background: url("http://twimgs.com/custom/csb/images/blue_loading_bar.gif") no-repeat scroll 625px 15px #EEEEEE;border: 4px solid #007BA7;}
+#ngErrorScreen.drdobbs{border: 4px solid #007BA7;}
+/*NWC*/
+#TWLightBoxPanel.networkcomputing #topLoginHeader{background: url(http://twimgs.com/custom/csb/images/nextgen/nextgen_container_header_bg.gif) no-repeat;}
+#TWLightBoxPanel.networkcomputing #nextGenLoginContainer{background: url("http://twimgs.com/custom/csb/images/nextgen/nextgen_container_mid_bg.gif") repeat-y scroll 0 0 transparent;}
+#TWLightBoxPanel.networkcomputing #nextGenFooterContainer{background: url("http://twimgs.com/custom/csb/images/nextgen/nextgen_container_footer_bg.gif") no-repeat scroll 0 0 transparent;}
+#TWLightBoxPanel.networkcomputing #nextGenContainer_closeButton_inner{background: url("http://twimgs.com/custom/csb/images/nextgen/nextgen_close_btn.gif") no-repeat scroll 0 0 transparent;}
+#ngLoadingScreen.networkcomputing {background: url("http://twimgs.com/custom/csb/images/blue_loading_bar.gif") no-repeat scroll 625px 15px #EEEEEE;border: 4px solid #007BA7;}
+#ngErrorScreen.networkcomputing {border: 4px solid #007BA7;}
+
+
+#TWLightBoxPanel {font-family: Arial,Helvetica,sans-serif !important; font-size:13px; line-height:1.231;}
+#TWLightBoxPanel{width:610px !important;height:auto;border: 15px solid rgba(0, 0, 0, 0.3);   border-radius: 1em 1em 1em 1em; border: 15px solid #353535\9;}
+#topLoginHeader {height: 20px;}
+#nextGenLoginContainer {text-align: left;display:block;padding: 5px 5px 10px;width: 780px; height: 400px;}
+#nextGenLoginContainer #displayAssetNew {padding: 0 30px;}
+#nextGenContainer {height:665px; overflow:auto;width: 571px;}
+#nextGenFooterContainer {height: 8px;margin-top: -3px;}
+#nextGenContainer_closeButton_inner {height: 29px;width: 79px;cursor: pointer;}
+#nextGenLoginContainer a { color: #347EAA; }
+.nextGenContainer_title { float: left; color: #ffffff; font-size: 24px; font-weight: bold; padding: 10px 0px 0px 15px;}
+.nextGenContainer_closeButton { float: right; padding-top: 10px; padding-right: 10px;}
+#TWLightBoxOverlay {  opacity: 0.7 !important; filter:alpha(opacity=70) !important;}
+#nextGenLoginContainer #layout{
+	margin:0;
+}
+#nextGenLoginContainer #layout, #nextGenLoginContainer #main,  #nextGenLoginContainer #main, #nextGenLoginContainer #body_container, #nextGenLoginContainer #body_container_inner, #nextGenLoginContainer #register_full_container_inner, #nextGenLoginContainer #register_full_container, #nextGenLoginContainer .contents{
+	width:545px !important; 
+}
+#ngLoadingScreen, #ngErrorScreen {
+    border-radius: 0.3em 0.3em 0.3em 0.3em;
+    height: 10px;
+    padding: 15px;
+    text-align: left;
+}
+#ngErrorScreen {background-color: white; font-weight:bold;}
+#nextGenLoginForm #submit {
+    background: url("http://twimgs.com/custom/csb/images/nextgen/login_btn.gif") repeat 
+scroll 0 0 transparent;
+    border: medium none;
+    height: 32px;
+    margin-left: 75px;
+    width: 64px;
+}
+#nextGenLoginForm #submit:hover {
+  cursor:pointer;
+}
+#nextGenContainer .ngExtAuth img {
+    float: none;
+}
+#nextGenContainer #register_full_container_inner .benefits #register_site_links_table {width:650px !important;}
+#nextGenContainer #register_full_container_inner .benefits #register_site_links_table td {width:200px !important;}
+.red {color:#A21E19;}
+#nextGenLoginContainer #body_container {border:medium none;}
+#nextGenLoginContainer #body_container_inner h1{font-weight: bold;}
+#nextGenLoginContainer #register_full_container_inner ul li{list-style: disc outside none;}
+#nextGenLoginContainer #register_full_container .benefits ul.register_small{padding-left:15px\9;margin:0;}
+#nextGenLoginContainer #register_full_container_inner .outer_border {float:left;width:329px;background:#d3d3d3;margin-top:20px;padding:5px 2px 5px 2px;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#292929;}
+#nextGenLoginContainer #register_full_container_inner .inner_border {float:left;width:300px;background:#fff;padding:20px 15px 20px 15px;}
+#nextGenLoginContainer #register_full_container_inner .inner_border input {width:290px;margin:0;padding:0;color:#292929;font-size:11px;}
+#nextGenLoginContainer #register_full_container_inner .checkholder {width:300px;}
+#nextGenLoginContainer #register_full_container_inner .checkholder input {height:14px; width:14px; border:none; margin-top:1px;}
+#nextGenLoginContainer #register_full_container_inner .check_text {padding-left:20px;}
+#nextGenLoginContainer #register_full_container_inner .inner_border .button {border:none; margin:15px 0 0 90px; padding:0;}
+#nextGenLoginContainer #register_full_container_inner .contents_mid {width:681px; padding:0 145px 0 145px;}
+#nextGenLoginContainer #register_full_container_inner .outer_border_lg_single {width:671px; background:#eeeeee; margin:5px 0 20px 0; padding:2px 2px 2px 2px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px;}
+#nextGenLoginContainer #register_full_container_inner .inner_border_lg_single {width:631px; background:#fff; padding:20px 20px 20px 20px; border: 1px solid #b2b2b2;}
+#nextGenLoginContainer #register_full_container_inner .outer_border_lg {width:671px; background:#eeeeee; margin:5px 0 20px 0; padding:2px 2px 2px 2px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px;}
+#nextGenLoginContainer #register_full_container_inner .inner_border_lg {width:631px; background:#fff; padding:20px 20px 20px 20px; border: 1px solid #b2b2b2;}
+#nextGenLoginContainer #register_full_container_inner .inner_border_lg .inputHead {font-weight:bold;}
+#nextGenLoginContainer #register_full_container_inner .inner_border_lg select {width:250px; /* margin-bottom:17px; */color:#292929; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px;}
+*html #register_full_container_inner .inner_border_lg select {margin-bottom:10px;}
+#nextGenLoginContainer #register_full_container_inner .right_select {float:right;}
+#nextGenLoginContainer #register_full_container_inner .inner_right .right_select {width:283px;margin:0 0 0 10px;}
+#nextGenLoginContainer #register_full_container_inner .inner_border_lg input {width:245px; margin:0;padding:0;}
+#register_full_container_inner .inner_border_lg_checkholder_pi input {float:right;height:14px; width:14px; border:none; margin:1px 0 0 0;}
+#nextGenLoginContainer #register_full_container_inner .inner_border_lg_checkholder input {float:left;height:14px;width:14px;border:none;margin:1px 8px 0 0;}
+#nextGenLoginContainer #register_full_container_inner .inner_border_lg_checkholder2 input {height:14px; width:14px; border:none; margin-top:1px;  clear:both;}
+#nextGenLoginContainer #register_full_container_inner .inner_border_lg_inline input {height:16px; width:14px; border:none; margin:3px 12px 0 8px;}
+#nextGenLoginContainer #register_full_container_inner .selectInput {margin:0;padding:0;}
+#nextGenLoginContainer #register_full_container_inner .inner_left {float:left;/* width:345px; */width:260px;margin:0 10px 0 0;padding:0;text-align:right;}
+#nextGenLoginContainer #register_full_container_inner .inner_right {float:left;/* width:285px; */width:360px;margin:0;padding:0;text-align:left;}
+#nextGenLoginContainer #register_full_container_inner .inner_left_ba {width:200px; padding:0px; margin-top:2px;}
+#nextGenLoginContainer #register_full_container_inner .inner_left_pc {width:370px;margin:0px;padding:0px;text-align:left;}
+#nextGenLoginContainer #register_full_container_inner .inner_right_pc {float:right;width:250px;margin:0;padding:0;text-align:left;}
+#nextGenLoginContainer #register_full_container_inner .inner_left_pc2 {width:300px;margin:0px;padding:0px;text-align:left;}
+#nextGenLoginContainer #register_full_container_inner .inner_right_pc2 {float:right;width:300px;margin:0;padding:0;text-align:left;}
+#nextGenLoginContainer #register_full_container_inner .contents_mid .button {float:right; width:85px; border:none; margin:0; padding:15px 6px 0 95px;}
+#nextGenLoginContainer #register_full_container_inner .divider {width:630px; border-top:1px #9a9a9a solid; margin:20px 0 10px 0;}
+#nextGenLoginContainer #register_full_container_inner .divider_noimg {width:630px; margin:10px 0 10px 0;}
+#nextGenLoginContainer #register_full_container_inner .no-margin {margin:0px;}
+/*Global CSS*/
+#nextGenLoginContainer #register_full_container {background-color:#F3F3F4;font-size:12px;}
+#nextGenLoginContainer #register_full_container .contents_right p {color:#000;font-weight:bold;font-size:1.2em;margin:5px 0px;}
+#nextGenLoginContainer #register_full_container .contents_right p a {color:#003bb0;font-weight:bold;}
+#nextGenLoginContainer #register_full_container a {color:#003bb0;text-decoration: none;}
+#nextGenLoginContainer #register_full_container li {margin:3px 0px;}
+#nextGenLoginContainer #register_full_container_inner {background-color:#F3F3F4;padding-top: 0px;}
+#nextGenLoginContainer #register_full_container_inner .contents h1 {font-size:36px;line-height:40px;color:#C7C5C5;padding:0px 0px 5px 40px;background-color:#F3F3F4;margin:0px;}
+#nextGenLoginContainer #register_full_container_inner .contents #displayAsset {height:72px;background:url(https://i.ubm-us.net/informationweek/whitepaper/v3/common/css/images/display_asset_bg.jpg) top no-repeat;margin-top:0px;}
+#nextGenLoginContainer #register_full_container_inner .contents #displayAsset #back_to_iweek {font-weight:bold;margin:0px 40px 0px 40px;padding-top:5px;border-top:1px solid #C7C5C5;}
+#nextGenLoginContainer #register_full_container_inner .contents #displayAsset #back_to_iweek {font:Verdana, Geneva, sans-serif;font-size:11px;font-weight:bold;}
+#nextGenLoginContainer #register_full_container_inner .contents #displayAsset #back_to_iweek a {color:#003bb0;}
+#nextGenLoginContainer #register_full_container_inner .contents #displayAsset #back_to_iweek a:hover {text-decoration:underline;}
+#nextGenLoginContainer #register_full_container_inner .contents #displayAsset #vendorAd { /* added 5/10/12, JH */width:287px;float:right;margin:-10px 55px 0 0;padding:0;border-top:solid 2px#000; border-bottom:solid 2px #000;}
+#nextGenLoginContainer #register_full_container .register_small a, #register_full_container .register_small a:hover{color: #003bb0;text-decoration:underline;}
+#nextGenLoginContainer #register_full_container_inner .contents_left .required_note, #register_full_container_inner .contents_left_forgotpw .required_note {clear:both;float:right;padding-right:10px;color:#999;}
+#nextGenLoginContainer #register_full_container_inner .outer_border{margin-top: 0px;}
+#nextGenLoginContainer #register_full_container_inner .contents{}
+#nextGenLoginContainer #register_full_container_inner .contents_left{padding-left: 50px;}
+#nextGenLoginContainer #register_full_container_inner .contents_right {float: right;width: 500px;padding-top: 0px;padding-bottom: 0px;padding-left: 20px;}
+#nextGenLoginContainer #register_full_container_inner .contents_right ul, #register_full_container_inner .contents_right p {width:420px;}
+#nextGenLoginContainer #register_full_container_inner a.register_now_button {background: url(https://i.ubm-us.net/informationweek/whitepaper/v3/common/css/images/button_register-now_off.gif) no-repeat;background-position: 0px 0px;cursor: pointer;width:135px;height:19px;margin:20px 0px;display: block;}
+#nextGenLoginContainer #register_full_container_inner .benefits a.register_now_button{display: inline-block !imporatant;}
+#nextGenLoginContainer #register_full_container_inner a.register_now_button span {display: none;}
+#nextGenLoginContainer #register_full_container_inner a.register_now_button:hover{background: url(https://i.ubm-us.net/informationweek/whitepaper/v3/common/css/images/button_register-now_on.gif) no-repeat;background-position: 0px 0px;}
+#nextGenLoginContainer #register_full_container_inner .register_red_subhead{color:#000000;font-size: 18px;font-weight: bold;}
+#nextGenLoginContainer #register_full_container_inner .benefits .register_red_subhead{font-size: 22px;}
+#nextGenLoginContainer #register_full_container_inner .register_red_subhead a{color:#003BB0;}
+#nextGenLoginContainer #register_full_container_inner .benefits .register_red_subhead a{font-size: 18px;}
+#nextGenLoginContainer #register_full_container_inner .register_red_subhead a:hover {text-decoration:underline;}
+#nextGenLoginContainer #register_full_container_inner #register_site_links_table{clear:both;margin-top:10px;width:550px;}
+#nextGenLoginContainer #register_site_links_table a{color:#666;}
+#nextGenLoginContainer #register_site_links_table a:hover{text-decoration:underline;}
+#nextGenLoginContainer #register_site_links_table td{width:150px;font-weight:bold;line-height:20px;}
+#nextGenLoginContainer #register_full_container_inner .benefits #register_site_links_table {width:750px;}
+#nextGenLoginContainer #register_full_container_inner .benefits #register_site_links_table td {width:250px;}
+#nextGenLoginContainer #register_full_container_inner .contents{background-color: #eeeeee;background-image: none;background-repeat: repeat-x;padding-bottom: 50px;}
+#nextGenLoginContainer #register_full_container_inner .benefits {width:600px;padding: 0px 50px 0px 50px;}
+#nextGenLoginContainer #register_full_container_inner #log_in {float:right;}
+#nextGenLoginContainer #register_full_container_inner #log_in a {color:#003bb0;}
+#nextGenLoginContainer #register_full_container_inner .inner_border .button {background:url("https://i.ubm-us.net/informationweek/whitepaper/v3/common/css/images/button_log-on_off.gif");width:84px;height:19px;margin-left:0px;}
+#nextGenLoginContainer #register_full_container_inner .inner_border .button:hover {background:url(images/button_log-on_on.gif);width:84px;height:19px;}
+#nextGenLoginContainer #register_full_container_inner #benefits_left {float:left;width:220px;margin-left:10px;padding-top:15px;}
+#nextGenLoginContainer #register_full_container_inner #benefits_left li {color:#656667;}
+#nextGenLoginContainer #register_full_container_inner .contents_mid {float: right;width: 681px;padding-top: 0px;padding-right: 30px;padding-bottom: 0pt;padding-left: 0px;}
+#nextGenLoginContainer #register_full_container_inner .contents_mid .button {background:url(images/button_register-now_off.gif);
+background-repeat:no-repeat;width:135px;height:19px;padding:0px;margin:30px 200px;}
+#nextGenLoginContainer #register_full_container_inner .contents_mid .button:hover {background:url(images/button_register-now_on.gif);background-repeat:no-repeat;width:135px;height:19px;}
+#nextGenLoginContainer #register_full_container_inner .contents_left_forgotpw {width:329px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 145px;}
+#nextGenLoginContainer #register_full_container_inner .contents_left_forgotpw .inner_border .button {background-image: url("https://i.ubm-us.net/informationweek/whitepaper/v3/common/css/images/get_password.gif");background-repeat: no-repeat;width: 148px;height: 18px;margin-left:0px;}
+#nextGenLoginContainer #register_full_container_inner .contents_left_forgotpw .inner_border .button:hover {background-image: url("https://i.ubm-us.net/informationweek/whitepaper/v3/common/css/images/get_password_roll.gif");background-repeat: no-repeat; width: 148px;height: 18px;}
+#nextGenLoginContainer #register_full_container_inner .return_button {background: url(images/return_to_prev_page.gif) no-repeat;width:185px;height:18px;margin:20px 0px;}
+#nextGenLoginContainer #register_full_container_inner .return_button:hover{background: url(images/return_to_prev_page_roll.gif) no-repeat;width:185px;height:18px;}
+#nextGenLoginContainer #register_full_container_inner .document_button {background: url(images/document_download.gif) no-repeat;width:205px;height:18px;margin:20px 0px;}
+#nextGenLoginContainer #register_full_container_inner .document_button:hover{background: url(images/document_download_roll.gif) no-repeat;width:205px;height:18px;}
+#nextGenLoginContainer .register_black_subhead {color:#000;font-size: 18px;font-weight: bold;}
+#nextGenLoginContainer .register_black_subhead a {color:#003bb0;}
+#nextGenLoginContainer #register_full_container_inner #changepassword  p{padding:0px;}
+
+#nextGenLoginContainer #register_full_container {
+ 	float:left; 
+	width:971px; 
+	background:url(https://i.cmpnet.com/informationweek/whitepaper/v2/common/images/body_container_bg.jpg) left top repeat-x;
+}
+
+.edn #nextGenLoginContainer #register_full_container {background:#FFFFFF;}
+.edn #nextGenLoginContainer #register_full_container_inner {background-color:#FFFFFF;}
+.edn #nextGenLoginContainer #register_full_container_inner .contents{background-color: #FFFFFF;}
+.edn #nextGenLoginContainer #register_full_container_inner .contents h1 {background-color: #FFFFFF;}
+
+.embedded #nextGenLoginContainer #register_full_container {background:#FFFFFF;}
+.embedded #nextGenLoginContainer #register_full_container_inner {background-color:#FFFFFF;}
+.embedded #nextGenLoginContainer #register_full_container_inner .contents{background-color: #FFFFFF;}
+.embedded #nextGenLoginContainer #register_full_container_inner .contents h1 {background-color: #FFFFFF;}
+
+
+#nextGenLoginContainer #register_full_container .logo_techweb {
+ 	float:left;
+}
+
+#nextGenLoginContainer #register_full_container .logos {
+ 	float:right;
+}
+
+#nextGenLoginContainer #register_full_container h3 {
+ 	font-size:14px; 
+	color:#003663;
+}
+
+#nextGenLoginContainer #register_full_container a {
+	/* font-size:1em; */
+	color:#b10000; 
+	text-decoration:none;
+}
+
+#nextGenLoginContainer #register_full_container a:hover {
+ 	text-decoration:underline;
+}
+
+#nextGenLoginContainer #register_full_container .bold {
+ 	font-wieght:bold;
+}
+
+#nextGenLoginContainer #register_full_container .red {
+ 	color:#cc0000;
+}
+
+#nextGenLoginContainer #register_full_container .blue {
+ 	color:#003663;
+}
+
+#nextGenLoginContainer #register_full_container_inner p {
+	margin:0 0 13px 0;
+	padding:0;
+	clear:both;
+}
+
+#nextGenLoginContainer #register_full_container .nickname {
+ 	color:#666666; 
+	font-family:Verdana, Arial, Helvetica, sans-serif; 
+	font-size:10px;
+}
+
+#nextGenLoginContainer #register_full_container .pc_small {
+ 	color:#003663; 
+	font-family:Verdana, Arial, Helvetica, sans-serif; 
+	font-size:11px;
+}
+
+#nextGenLoginContainer #register_full_container .required {
+ 	float:left; 
+	width:671px;
+}
+
+#nextGenLoginContainer #register_full_container .req_note {
+ 	color:#666666; 
+	font-family:Verdana, Arial, Helvetica, sans-serif; 
+	font-size:11px;
+}
+
+#nextGenLoginContainer #register_full_container .req {
+ 	color:#292929; 
+	font-family:Verdana, Arial, Helvetica, sans-serif; 
+	font-size:11px;
+}
+
+#nextGenLoginContainer #register_full_container .headerbar {
+ 	width:971px; 
+	height:29px; 
+	background:url(https://i.cmpnet.com/informationweek/whitepaper/v2/common/images/regbar_bg.jpg) left top repeat-x; 
+	padding:5px 0 10px 0;
+}
+
+#nextGenLoginContainer #register_full_container .headerbar_lg {
+ 	color:#003663; 
+	font-family:Verdana, Arial, Helvetica, sans-serif; 
+	font-size:13px; 
+	font-weight:bold;
+}
+
+#nextGenLoginContainer #register_full_container .headerbar_sm {
+ 	color:#003663; 
+	font-family:Verdana, Arial, Helvetica, sans-serif; 
+	font-size:11px;
+}
+
+#nextGenLoginContainer #register_full_container .headerbar a {
+ 	font-size:11px; 
+	color:#003663; 
+	text-decoration:none;
+}
+
+#nextGenLoginContainer #register_full_container .headerbar a:hover {
+ 	text-decoration:underline;
+}
+#nextGenLoginContainer #register_full_container .logos_login {
+ 	float:right;
+	display: inline;
+	width: 740px;
+	margin-top: 20px;
+	
+}
+
+#nextGenLoginContainer div.logos_login img {
+	float: none;
+	margin-right: 5px;
+}
+/********************** END:Author : CEI, date 16th June, 2009**********************/
+
+#nextGenLoginContainer #register_full_container_inner {
+ 	float:left; 
+	width:971px; 
+	padding:30px 0 0 0;
+}
+
+#nextGenLoginContainer #register_full_container_inner .contents_left {
+ 	float:left; 
+	width:340px; 
+	padding:0 0 0 145px;
+}
+
+#nextGenLoginContainer #register_full_container_inner .contents_right {
+ 	float:left; 
+	width:300px; 
+	padding:65px 45px 0 20px;
+}
+
+#nextGenLoginContainer #register_full_container_inner .subhead {
+ 	font-family:Verdana, Arial, Helvetica, sans-serif; 
+	font-size:11px; 
+	color:#4b5056; 
+	font-weight:bold;
+}
+
+#nextGenLoginContainer #register_full_container_inner ul {
+ 	float:left; 
+	list-style:disc; 
+	padding-left:15px;
+}
+
+#nextGenLoginContainer #register_full_container_inner .outer_border {
+ 	float:left; 
+	width:329px; 
+	background:#d3d3d3; 
+	margin-top:20px; 
+	padding:5px 2px 5px 2px; 
+	font-family:Verdana, Arial, Helvetica, sans-serif; 
+	font-size:11px; 
+	color:#292929;
+}
+
+#nextGenLoginContainer #register_full_container_inner .inner_border {
+ 	float:left; 
+	width:300px; 
+	background:#fff; 
+	padding:20px 15px 20px 15px;
+}
+
+#nextGenLoginContainer #register_full_container_inner fieldset {
+ 	float:left; 
+	border:none; 
+	padding:0px; 
+	margin:0px;
+}
+
+#nextGenLoginContainer #register_full_container_inner .inner_border input {
+ 	width:290px; 
+	float:left; 
+	margin:0; 
+	padding:0;
+	color:#292929; 
+	font-size:11px;
+}
+
+#nextGenLoginContainer #register_full_container_inner .checkholder {
+ 	float:left; 
+	width:300px;
+}
+
+#nextGenLoginContainer #register_full_container_inner .checkholder input {
+ 	float:left; 
+	height:14px; 
+	width:14px; 
+	border:none; 
+	margin-top:1px;
+}
+
+#nextGenLoginContainer #register_full_container_inner .check_text {
+ 	padding-left:20px;
+}
+
+#nextGenLoginContainer #register_full_container_inner .inner_border .button {
+ 	float:left; 
+	width:85px; 
+	border:none; 
+	margin:15px 0 0 90px; 
+	padding:0;
+}
+
+#nextGenLoginContainer #register_full_container_inner .contents_mid {
+ 	float:left; 
+	width:681px; 
+	padding:0 145px 0 145px;
+}
+
+#nextGenLoginContainer #register_full_container_inner .outer_border_lg_single {
+ 	float:left; 
+	width:671px; 
+	background:#eeeeee; 
+	margin:5px 0 20px 0; 
+	padding:2px 2px 2px 2px; 
+	font-family:Verdana, Arial, Helvetica, sans-serif; 
+	font-size:11px;
+}
+
+#nextGenLoginContainer #register_full_container_inner .inner_border_lg_single {
+ 	float:left; 
+	width:631px; 
+	background:#fff; 
+	padding:20px 20px 20px 20px; 
+	border: 1px solid #b2b2b2;
+}
+
+#nextGenLoginContainer #register_full_container_inner .outer_border_lg {
+ 	float:left; 
+	width:671px; 
+	background:#eeeeee; 
+	margin:5px 0 20px 0; 
+	padding:2px 2px 2px 2px; 
+	font-family:Verdana, Arial, Helvetica, sans-serif; 
+	font-size:11px;
+}
+
+#nextGenLoginContainer #register_full_container_inner .inner_border_lg {
+ 	float:left; 
+	width:631px; 
+	background:#fff; 
+	padding:20px 20px 20px 20px; 
+	border: 1px solid #b2b2b2;
+}
+
+#nextGenLoginContainer #register_full_container_inner .inner_border_lg .inputHead {
+	font-weight:bold;
+}
+
+#nextGenLoginContainer #register_full_container_inner .inner_border_lg select {
+ 	float:left; 
+	width:250px; 
+	/* margin-bottom:17px; */
+	color:#292929; 
+	font-family:Verdana, Arial, Helvetica, sans-serif; 
+	font-size:11px;
+}
+
+*html #nextGenLoginContainer #register_full_container_inner .inner_border_lg select {
+	margin-bottom:10px;
+}
+
+#nextGenLoginContainer #register_full_container_inner .right_select {
+ 	float:right;
+}
+
+#nextGenLoginContainer #register_full_container_inner .inner_right .right_select {
+ 	width:283px;
+	margin:0 0 0 10px;
+}
+
+#nextGenLoginContainer #register_full_container_inner .inner_border_lg input {
+ 	float:left; 
+	width:245px; 
+	margin:0;
+	padding:0;
+}
+
+#nextGenLoginContainer #register_full_container_inner .inner_border_lg_checkholder_pi input {
+ 	float:right;
+	height:14px; 
+	width:14px; 
+	border:none; 
+	margin:1px 0 0 0;
+}
+
+#nextGenLoginContainer #register_full_container_inner .inner_border_lg_checkholder input {
+ 	float:left;
+	height:14px;
+	width:14px;
+	border:none;
+	margin:1px 8px 0 0;
+}
+
+
+#nextGenLoginContainer #register_full_container_inner .inner_border_lg_checkholder2 input {
+ 	height:14px; 
+	width:14px; 
+	border:none; 
+	margin-top:1px;  
+	clear:both;
+}
+
+#nextGenLoginContainer #register_full_container_inner .inner_border_lg_inline input {
+ 	float:left; 
+	height:16px; 
+	width:14px; 
+	border:none; 
+	margin:3px 12px 0 8px;
+}
+
+#nextGenLoginContainer #register_full_container_inner .selectInput {
+	margin:0;
+	padding:0;
+}
+
+
+#nextGenLoginContainer #register_full_container_inner .inner_left {
+	float:left;
+	/* width:345px; */
+	width:260px;
+	margin:0 10px 0 0;
+	padding:0;
+	text-align:right;
+}
+
+#nextGenLoginContainer #register_full_container_inner .inner_right {
+	float:left;
+	/* width:285px; */
+	width:360px;
+	margin:0;
+	padding:0;
+	text-align:left;
+}
+
+#nextGenLoginContainer #register_full_container_inner .inner_left_ba {
+ 	float:left; 
+	width:200px; 
+	padding:0px; 
+	margin-top:2px;
+}
+
+#nextGenLoginContainer #register_full_container_inner .inner_left_pc {
+ 	float:left; 
+	width:370px;
+	margin:0px;
+	padding:0px;
+	text-align:left;
+}
+
+#nextGenLoginContainer #register_full_container_inner .inner_right_pc {
+	float:right;
+	width:250px;
+	margin:0;
+	padding:0;
+	text-align:left;
+}
+
+#nextGenLoginContainer #register_full_container_inner .inner_left_pc2 {
+ 	float:left; 
+	width:300px;
+	margin:0px;
+	padding:0px;
+	text-align:left;
+}
+
+#nextGenLoginContainer #register_full_container_inner .inner_right_pc2 {
+	float:right;
+	width:300px;
+	margin:0;
+	padding:0;
+	text-align:left;
+}
+
+
+#nextGenLoginContainer #register_full_container_inner .contents_mid .button {
+ 	float:right; 
+	width:85px; 
+	border:none; 
+	margin:0; 
+	padding:15px 6px 0 95px;
+}
+
+#nextGenLoginContainer #register_full_container_inner .divider {
+ 	float:left; 
+	width:630px; 
+	border-top:1px #9a9a9a solid; 
+	margin:20px 0 10px 0;
+}
+
+#nextGenLoginContainer #register_full_container_inner .divider_noimg {
+ 	float:left; 
+	width:630px; 
+	margin:10px 0 10px 0;
+}
+
+#nextGenLoginContainer #register_full_container_inner .no-margin {margin:0px;}
+
+/**************** full container stop *********************************/
+
+#nextGenLoginContainer .register_small {
+ 	font-family:Verdana, Arial, Helvetica, sans-serif; 
+	color:#000000; 
+	font-size:11px;
+}
+
+#nextGenLoginContainer #register_full_container .register_small a {
+ 	font-family:Verdana, Arial, Helvetica, sans-serif; 
+	font-weight:bold; 
+	color:#003663; 
+	font-size:11px; 
+	text-decoration:none; 
+	line-height: 20px;
+}
+
+#nextGenLoginContainer #register_full_container .register_small a:hover {
+ 	font-family:Verdana, Arial, Helvetica, sans-serif; 
+	color:#003663; 
+	font-size:11px; 
+	text-decoration:underline;
+}
+
+#nextGenLoginContainer .register_small_arial {
+ 	font-family:Arial, Helvetica, sans-serif; 
+	color:#000000; 
+	font-size:10px;
+} 
+
+#nextGenLoginContainer .register_blue_subhead {
+ 	font-family:Verdana, Arial, Helvetica, sans-serif; 
+	color:#003663; 
+	font-size:14px;font-weight:bold;
+}
+#nextGenLoginContainer #register_full_container h1 span, #nextGenLoginContainer #register_full_container h2 span{
+visibility:visible;
+}
+#nextGenLoginForm #submit-element {margin:0px;}
+#nextGenLoginContainer #registrationForm .inner_border_lg p.description {float: none;font-size: 13px;width: auto;}
+#nextGenLoginContainer p {font-size: 93%;}
+#nextGenLoginContainer span.rememberMe, #nextGenLoginContainer #submit-element #submit{*margin-left:40px !important;}
+#nextGenContainer #registrationForm .custom-question p.description{*display:inline;}
+#nextGenContainer #loginStatusContainer {height: 25px;margin-left: 24px;}
+#nextGenContainer fieldset.custom-question legend  span{display:none;}
+#nextGenContainer .nextGenWideInnerContainer .errors{color:red;}
+body.red {color:#000000!important;}

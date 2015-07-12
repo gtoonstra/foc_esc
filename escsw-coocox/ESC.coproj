@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Project version="2G - 1.7.8" name="ESC">
+  <Target name="ESC" isCurrent="1">
+    <Device manufacturerId="9" manufacturerName="ST" chipId="344" chipName="STM32F407VG" boardId="" boardName=""/>
+    <BuildOption>
+      <Compile>
+        <Option name="OptimizationLevel" value="1"/>
+        <Option name="UseFPU" value="0"/>
+        <Option name="UserEditCompiler" value=""/>
+        <Option name="SupportCPlusplus" value="0"/>
+        <Option name="FPU" value="2"/>
+        <Includepaths>
+          <Includepath path="."/>
+        </Includepaths>
+        <DefinedSymbols>
+          <Define name="STM32F407VG"/>
+          <Define name="STM32F4XX"/>
+          <Define name="USE_STDPERIPH_DRIVER"/>
+          <Define name="__ASSEMBLY__"/>
+          <Define name="__FPU_USED"/>
+        </DefinedSymbols>
+      </Compile>
+      <Link useDefault="0">
+        <Option name="DiscardUnusedSection" value="0"/>
+        <Option name="UserEditLinkder" value=""/>
+        <Option name="UseMemoryLayout" value="1"/>
+        <Option name="nostartfiles" value="1"/>
+        <Option name="LTO" value="0"/>
+        <Option name="IsNewStartupCode" value="1"/>
+        <Option name="Library" value="Not use C Library"/>
+        <LinkedLibraries>
+          <Libset dir="stm32f4-discovery\" libs="pdmfilter_gcc"/>
+          <Libset dir="" libs="m"/>
+        </LinkedLibraries>
+        <MemoryAreas debugInFlashNotRAM="1">
+          <Memory name="IROM1" type="ReadOnly" size="0x00100000" startValue="0x08000000"/>
+          <Memory name="IRAM1" type="ReadWrite" size="0x00020000" startValue="0x20000000"/>
+          <Memory name="IROM2" type="ReadOnly" size="" startValue=""/>
+          <Memory name="IRAM2" type="ReadWrite" size="0x00010000" startValue="0x10000000"/>
+        </MemoryAreas>
+        <LocateLinkFile path="c:/coocox/coide/configuration/programdata/esc/arm-gcc-link.ld" type="0"/>
+      </Link>
+      <Output>
+        <Option name="OutputFileType" value="0"/>
+        <Option name="Path" value="./"/>
+        <Option name="Name" value="ESC"/>
+        <Option name="HEX" value="1"/>
+        <Option name="BIN" value="1"/>
+      </Output>
+      <User>
+        <UserRun name="Run#1" type="Before" checked="0" value=""/>
+        <UserRun name="Run#1" type="After" checked="0" value=""/>
+      </User>
+    </BuildOption>
+    <DebugOption>
+      <Option name="org.coocox.codebugger.gdbjtag.core.adapter" value="ST-Link"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.debugMode" value="SWD"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.clockDiv" value="1M"/>
+      <Option name="org.coocox.codebugger.gdbjtag.corerunToMain" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkgdbserver" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.userDefineGDBScript" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.targetEndianess" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkResetMode" value="Type 0: Normal"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.resetMode" value="SYSRESETREQ"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifSemihost" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifCacheRom" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ipAddress" value="127.0.0.1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.portNumber" value="2009"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.autoDownload" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.verify" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.downloadFuction" value="Erase Effected"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.defaultAlgorithm" value="STM32F4xx_1024.elf"/>
+    </DebugOption>
+    <ExcludeFile/>
+  </Target>
+  <Components path="./">
+    <Component id="30" name="C Library" path="" type="2"/>
+    <Component id="54" name="M4 CMSIS Core" path="" type="2"/>
+    <Component id="500" name="CMSIS BOOT" path="" type="2"/>
+    <Component id="501" name="RCC" path="" type="2"/>
+    <Component id="502" name="PWR" path="" type="2"/>
+    <Component id="504" name="GPIO" path="" type="2"/>
+    <Component id="505" name="EXTI" path="" type="2"/>
+    <Component id="509" name="SPI" path="" type="2"/>
+    <Component id="510" name="I2C" path="" type="2"/>
+    <Component id="511" name="DMA" path="" type="2"/>
+    <Component id="513" name="TIM" path="" type="2"/>
+    <Component id="514" name="ADC" path="" type="2"/>
+    <Component id="515" name="DAC" path="" type="2"/>
+    <Component id="517" name="USART" path="" type="2"/>
+    <Component id="524" name="MISC" path="" type="2"/>
+    <Component id="526" name="SYSCFG" path="" type="2"/>
+    <Component id="573" name="STM32F4-Discovery" path="" type="2"/>
+    <Component id="936" name="USB STM32F4xx Drivers" path="" type="2"/>
+  </Components>
+  <Files>
+    <File name="cmsis_lib/source/stm32f4xx_usart.c" path="cmsis_lib/source/stm32f4xx_usart.c" type="1"/>
+    <File name="Drivers/STM32_USB_Device_Library/Class/cdc" path="" type="2"/>
+    <File name="Drivers/STM32_USB_OTG_Driver/inc/usb_core.h" path="Drivers/STM32_USB_OTG_Driver/inc/usb_core.h" type="1"/>
+    <File name="cdc/inc/usbh_conf.h" path="cdc/inc/usbh_conf.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_dac.h" path="cmsis_lib/include/stm32f4xx_dac.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_usart.h" path="cmsis_lib/include/stm32f4xx_usart.h" type="1"/>
+    <File name="cdc/inc/usbd_desc.h" path="cdc/inc/usbd_desc.h" type="1"/>
+    <File name="cmsis_boot/stm32f4xx.h" path="cmsis_boot/stm32f4xx.h" type="1"/>
+    <File name="cmsis/core_cm4_simd.h" path="cmsis/core_cm4_simd.h" type="1"/>
+    <File name="Drivers/STM32_USB_Device_Library/Core/inc/usbd_usr.h" path="Drivers/STM32_USB_Device_Library/Core/inc/usbd_usr.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_spi.c" path="cmsis_lib/source/stm32f4xx_spi.c" type="1"/>
+    <File name="cmsis/core_cmFunc.h" path="cmsis/core_cmFunc.h" type="1"/>
+    <File name="cdc" path="" type="2"/>
+    <File name="stm32f4xx_it.c" path="stm32f4xx_it.c" type="1"/>
+    <File name="syscalls/syscalls.c" path="syscalls/syscalls.c" type="1"/>
+    <File name="Drivers/STM32_USB_Device_Library/Core/inc/usbd_core.h" path="Drivers/STM32_USB_Device_Library/Core/inc/usbd_core.h" type="1"/>
+    <File name="Drivers/STM32_USB_OTG_Driver/src/usb_hcd.c" path="Drivers/STM32_USB_OTG_Driver/src/usb_hcd.c" type="1"/>
+    <File name="STM32F4-Discovery/stm32f4_discovery_lis302dl.h" path="STM32F4-Discovery/stm32f4_discovery_lis302dl.h" type="1"/>
+    <File name="vars.h" path="vars.h" type="1"/>
+    <File name="algorithms.c" path="algorithms.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_dac.c" path="cmsis_lib/source/stm32f4xx_dac.c" type="1"/>
+    <File name="Drivers/STM32_USB_OTG_Driver/inc" path="" type="2"/>
+    <File name="cmsis_lib/include/stm32f4xx_rcc.h" path="cmsis_lib/include/stm32f4xx_rcc.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_syscfg.c" path="cmsis_lib/source/stm32f4xx_syscfg.c" type="1"/>
+    <File name="cdc/src/usbd_usr.c" path="cdc/src/usbd_usr.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_pwr.h" path="cmsis_lib/include/stm32f4xx_pwr.h" type="1"/>
+    <File name="cmsis_boot/startup/startup_stm32f4xx.c" path="cmsis_boot/startup/startup_stm32f4xx.c" type="1"/>
+    <File name="STM32F4-Discovery/stm32f4_discovery_lis302dl.c" path="STM32F4-Discovery/stm32f4_discovery_lis302dl.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_rcc.c" path="cmsis_lib/source/stm32f4xx_rcc.c" type="1"/>
+    <File name="cmsis/core_cmInstr.h" path="cmsis/core_cmInstr.h" type="1"/>
+    <File name="STM32F4-Discovery/stm32f4_discovery_audio_codec.c" path="STM32F4-Discovery/stm32f4_discovery_audio_codec.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_pwr.c" path="cmsis_lib/source/stm32f4xx_pwr.c" type="1"/>
+    <File name="stm32f4_discovery_callbacks.c" path="stm32f4_discovery_callbacks.c" type="1"/>
+    <File name="Drivers/STM32_USB_Device_Library/Class/cdc/inc" path="" type="2"/>
+    <File name="Drivers/STM32_USB_OTG_Driver/inc/usb_defines.h" path="Drivers/STM32_USB_OTG_Driver/inc/usb_defines.h" type="1"/>
+    <File name="config.c" path="config.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_adc.h" path="cmsis_lib/include/stm32f4xx_adc.h" type="1"/>
+    <File name="cmsis_boot/system_stm32f4xx.c" path="cmsis_boot/system_stm32f4xx.c" type="1"/>
+    <File name="Drivers/STM32_USB_Device_Library/Release_Notes.html" path="Drivers/STM32_USB_Device_Library/Release_Notes.html" type="1"/>
+    <File name="Drivers/STM32_USB_OTG_Driver/src/usb_core.c" path="Drivers/STM32_USB_OTG_Driver/src/usb_core.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_spi.h" path="cmsis_lib/include/stm32f4xx_spi.h" type="1"/>
+    <File name="Drivers/STM32_USB_OTG_Driver/inc/usb_dcd_int.h" path="Drivers/STM32_USB_OTG_Driver/inc/usb_dcd_int.h" type="1"/>
+    <File name="cmsis" path="" type="2"/>
+    <File name="STM32F4-Discovery/stm32f4_discovery_audio_codec.h" path="STM32F4-Discovery/stm32f4_discovery_audio_codec.h" type="1"/>
+    <File name="Drivers/STM32_USB_Device_Library/Core/src/usbd_core.c" path="Drivers/STM32_USB_Device_Library/Core/src/usbd_core.c" type="1"/>
+    <File name="cdc/src/usb_bsp.c" path="cdc/src/usb_bsp.c" type="1"/>
+    <File name="cmsis_lib" path="" type="2"/>
+    <File name="Drivers/STM32_USB_OTG_Driver/src/usb_hcd_int.c" path="Drivers/STM32_USB_OTG_Driver/src/usb_hcd_int.c" type="1"/>
+    <File name="Drivers/STM32_USB_Device_Library/Class" path="" type="2"/>
+    <File name="STM32F4-Discovery" path="" type="2"/>
+    <File name="cmsis_lib/include/misc.h" path="cmsis_lib/include/misc.h" type="1"/>
+    <File name="cdc/src/usbd_desc.c" path="cdc/src/usbd_desc.c" type="1"/>
+    <File name="cdc/inc/usbd_cdc_vcp.h" path="cdc/inc/usbd_cdc_vcp.h" type="1"/>
+    <File name="main.c" path="main.c" type="1"/>
+    <File name="Drivers/STM32_USB_OTG_Driver/src/usb_dcd_int.c" path="Drivers/STM32_USB_OTG_Driver/src/usb_dcd_int.c" type="1"/>
+    <File name="cdc/inc" path="" type="2"/>
+    <File name="cmsis_lib/source/stm32f4xx_gpio.c" path="cmsis_lib/source/stm32f4xx_gpio.c" type="1"/>
+    <File name="Drivers/STM32_USB_Device_Library/Core/inc" path="" type="2"/>
+    <File name="cmsis_lib/include/stm32f4xx_i2c.h" path="cmsis_lib/include/stm32f4xx_i2c.h" type="1"/>
+    <File name="cdc/inc/usbd_conf.h" path="cdc/inc/usbd_conf.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_dma.c" path="cmsis_lib/source/stm32f4xx_dma.c" type="1"/>
+    <File name="cmsis_boot" path="" type="2"/>
+    <File name="cmsis_lib/include/stm32f4xx_syscfg.h" path="cmsis_lib/include/stm32f4xx_syscfg.h" type="1"/>
+    <File name="STM32F4-Discovery/pdm_filter.h" path="STM32F4-Discovery/pdm_filter.h" type="1"/>
+    <File name="Drivers" path="" type="2"/>
+    <File name="STM32F4-Discovery/stm32f4_discovery.h" path="STM32F4-Discovery/stm32f4_discovery.h" type="1"/>
+    <File name="Drivers/STM32_USB_OTG_Driver/inc/usb_regs.h" path="Drivers/STM32_USB_OTG_Driver/inc/usb_regs.h" type="1"/>
+    <File name="cmsis_boot/startup" path="" type="2"/>
+    <File name="cmsis/core_cm4.h" path="cmsis/core_cm4.h" type="1"/>
+    <File name="Drivers/STM32_USB_OTG_Driver" path="" type="2"/>
+    <File name="Drivers/STM32_USB_OTG_Driver/Release_Notes.html" path="Drivers/STM32_USB_OTG_Driver/Release_Notes.html" type="1"/>
+    <File name="Drivers/STM32_USB_OTG_Driver/inc/usb_dcd.h" path="Drivers/STM32_USB_OTG_Driver/inc/usb_dcd.h" type="1"/>
+    <File name="cdc/src" path="" type="2"/>
+    <File name="cdc/inc/usb_conf.h" path="cdc/inc/usb_conf.h" type="1"/>
+    <File name="Drivers/STM32_USB_OTG_Driver/inc/usb_otg.h" path="Drivers/STM32_USB_OTG_Driver/inc/usb_otg.h" type="1"/>
+    <File name="cmsis_lib/source/misc.c" path="cmsis_lib/source/misc.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_adc.c" path="cmsis_lib/source/stm32f4xx_adc.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_tim.h" path="cmsis_lib/include/stm32f4xx_tim.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_i2c.c" path="cmsis_lib/source/stm32f4xx_i2c.c" type="1"/>
+    <File name="Drivers/STM32_USB_Device_Library/Core/src" path="" type="2"/>
+    <File name="cmsis_lib/source" path="" type="2"/>
+    <File name="Drivers/STM32_USB_Device_Library/Core/inc/usbd_ioreq.h" path="Drivers/STM32_USB_Device_Library/Core/inc/usbd_ioreq.h" type="1"/>
+    <File name="cmsis_boot/stm32f4xx_conf.h" path="cmsis_boot/stm32f4xx_conf.h" type="1"/>
+    <File name="cmsis_boot/system_stm32f4xx.h" path="cmsis_boot/system_stm32f4xx.h" type="1"/>
+    <File name="Drivers/STM32_USB_Device_Library/Class/cdc/inc/usbd_cdc_core.h" path="Drivers/STM32_USB_Device_Library/Class/cdc/inc/usbd_cdc_core.h" type="1"/>
+    <File name="config.h" path="config.h" type="1"/>
+    <File name="Drivers/STM32_USB_Device_Library/Core/inc/usbd_def.h" path="Drivers/STM32_USB_Device_Library/Core/inc/usbd_def.h" type="1"/>
+    <File name="Drivers/STM32_USB_OTG_Driver/src" path="" type="2"/>
+    <File name="Drivers/STM32_USB_OTG_Driver/src/usb_otg.c" path="Drivers/STM32_USB_OTG_Driver/src/usb_otg.c" type="1"/>
+    <File name="Drivers/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.c" path="Drivers/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.c" type="1"/>
+    <File name="Drivers/STM32_USB_OTG_Driver/src/usb_dcd.c" path="Drivers/STM32_USB_OTG_Driver/src/usb_dcd.c" type="1"/>
+    <File name="Drivers/STM32_USB_OTG_Driver/inc/usb_hcd.h" path="Drivers/STM32_USB_OTG_Driver/inc/usb_hcd.h" type="1"/>
+    <File name="stm32f4xx_it.h" path="stm32f4xx_it.h" type="1"/>
+    <File name="algorithms.h" path="algorithms.h" type="1"/>
+    <File name="Drivers/STM32_USB_Device_Library/Core" path="" type="2"/>
+    <File name="Drivers/STM32_USB_Device_Library/Core/inc/usbd_conf_template.h" path="Drivers/STM32_USB_Device_Library/Core/inc/usbd_conf_template.h" type="1"/>
+    <File name="Drivers/STM32_USB_Device_Library" path="" type="2"/>
+    <File name="cmsis_lib/include/stm32f4xx_exti.h" path="cmsis_lib/include/stm32f4xx_exti.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_exti.c" path="cmsis_lib/source/stm32f4xx_exti.c" type="1"/>
+    <File name="STM32F4-Discovery/libPDMFilter_GCC.a" path="STM32F4-Discovery/libPDMFilter_GCC.a" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_dma.h" path="cmsis_lib/include/stm32f4xx_dma.h" type="1"/>
+    <File name="Drivers/STM32_USB_Device_Library/Class/cdc/src" path="" type="2"/>
+    <File name="cmsis_lib/source/stm32f4xx_tim.c" path="cmsis_lib/source/stm32f4xx_tim.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_gpio.h" path="cmsis_lib/include/stm32f4xx_gpio.h" type="1"/>
+    <File name="cdc/src/usbd_cdc_vcp.c" path="cdc/src/usbd_cdc_vcp.c" type="1"/>
+    <File name="Drivers/STM32_USB_Device_Library/Core/inc/usbd_req.h" path="Drivers/STM32_USB_Device_Library/Core/inc/usbd_req.h" type="1"/>
+    <File name="Drivers/STM32_USB_Device_Library/Core/src/usbd_req.c" path="Drivers/STM32_USB_Device_Library/Core/src/usbd_req.c" type="1"/>
+    <File name="Drivers/STM32_USB_OTG_Driver/inc/usb_bsp.h" path="Drivers/STM32_USB_OTG_Driver/inc/usb_bsp.h" type="1"/>
+    <File name="syscalls" path="" type="2"/>
+    <File name="Drivers/STM32_USB_Device_Library/Core/src/usbd_ioreq.c" path="Drivers/STM32_USB_Device_Library/Core/src/usbd_ioreq.c" type="1"/>
+    <File name="cmsis_lib/include" path="" type="2"/>
+    <File name="Drivers/STM32_USB_OTG_Driver/inc/usb_hcd_int.h" path="Drivers/STM32_USB_OTG_Driver/inc/usb_hcd_int.h" type="1"/>
+    <File name="STM32F4-Discovery/stm32f4_discovery.c" path="STM32F4-Discovery/stm32f4_discovery.c" type="1"/>
+  </Files>
+</Project>

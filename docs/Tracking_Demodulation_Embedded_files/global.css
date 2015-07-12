@@ -1,0 +1,188 @@
+.universal-header-for-mobile {
+	display:none;
+}
+.universal-header, .universal-header-for-mobile {
+    background: none repeat scroll 0 0 #000000;
+    color: white;
+    float: left; 
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+	height:30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:13px;
+}
+.universal-header a {
+ 	display: inline-block;
+    overflow: hidden;
+    text-decoration: none;
+    text-indent: -999em;		
+	width:30px;
+	height:30px;
+	cursor:pointer;
+	margin-left:30px;
+}
+.universal-header span {
+	overflow:hidden;
+	background-color:#333231;
+	width:2px;
+	height:30px;
+	display:inline-block;
+}
+.universal-header a.datasheets {
+	background: url("http://www.embedded.com/content/images/icons/UniversalHeader_Sprite.png") no-repeat scroll -6px -6px transparent;
+}
+.universal-header a.datasheets:hover, .universal-header a.datasheets.selected {
+	background: url("http://www.embedded.com/content/images/icons/UniversalHeader_Sprite.png") no-repeat scroll -6px -41px transparent;
+}
+.universal-header a.ebn {
+	background: url("http://www.embedded.com/content/images/icons/UniversalHeader_Sprite.png") no-repeat scroll -41px -6px transparent;
+}
+.universal-header a.ebn:hover, .universal-header a.ebn.selected {
+	background: url("http://www.embedded.com/content/images/icons/UniversalHeader_Sprite.png") no-repeat scroll -41px -41px transparent;
+}
+.universal-header a.edn {
+	background: url("http://www.embedded.com/content/images/icons/UniversalHeader_Sprite.png") no-repeat scroll -76px -6px transparent;
+}
+.universal-header a.edn:hover, .universal-header a.edn.selected {
+	background: url("http://www.embedded.com/content/images/icons/UniversalHeader_Sprite.png") no-repeat scroll -76px -41px transparent;
+}
+.universal-header a.eet {
+	background: url("http://www.embedded.com/content/images/icons/UniversalHeader_Sprite.png") no-repeat scroll -111px -6px transparent;
+}
+.universal-header a.eet:hover, .universal-header a.eet.selected {
+	background: url("http://www.embedded.com/content/images/icons/UniversalHeader_Sprite.png") no-repeat scroll -111px -41px transparent;
+}
+.universal-header a.emb {
+	background: url("http://www.embedded.com/content/images/icons/UniversalHeader_Sprite.png") no-repeat scroll -146px -6px transparent;
+}
+.universal-header a.emb:hover, .universal-header a.emb.selected {
+	background: url("http://www.embedded.com/content/images/icons/UniversalHeader_Sprite.png") no-repeat scroll -146px -41px transparent;
+}
+.universal-header a.pa {
+	background: url("http://www.embedded.com/content/images/icons/UniversalHeader_Sprite.png") no-repeat scroll -181px -6px transparent;
+}
+.universal-header a.pa:hover, .universal-header a.pa.selected {
+	background: url("http://www.embedded.com/content/images/icons/UniversalHeader_Sprite.png") no-repeat scroll -181px -41px transparent;
+}
+.universal-header a.tol {
+	background: url("http://www.embedded.com/content/images/icons/UniversalHeader_Sprite.png") no-repeat scroll -216px -6px transparent;
+    margin-right:30px;   
+}
+.universal-header a.tol:hover, .universal-header a.tol.selected {
+	background: url("http://www.embedded.com/content/images/icons/UniversalHeader_Sprite.png") no-repeat scroll -216px -41px transparent;
+}
+.universal-header a.tmw {
+	background: url("http://www.embedded.com/content/images/icons/UniversalHeader_Sprite.png") no-repeat scroll -251px -6px transparent;
+}
+.universal-header a.tmw:hover, .universal-header a.tmw.selected {
+	background: url("http://www.embedded.com/content/images/icons/UniversalHeader_Sprite.png") no-repeat scroll -251px -41px transparent;
+}
+.universal-header .events a {
+	background: url("http://www.embedded.com/content/images/icons/UniversalHeader_Sprite.png") no-repeat scroll -286px -6px transparent;
+	width:60px;
+}
+.universal-header .events:hover > a {
+	background: url("http://www.embedded.com/content/images/icons/UniversalHeader_Sprite.png") no-repeat scroll -286px -41px transparent;
+}
+.universal-header a.ubmt {
+	background: url("http://www.embedded.com/content/images/icons/UniversalHeader_Sprite.png") no-repeat scroll -351px -4px transparent;
+	float:right;
+	margin-right:30px;
+	width:80px;
+}
+.universal-header a.ubmt:hover {
+	background: url("http://www.embedded.com/content/images/icons/UniversalHeader_Sprite.png") no-repeat scroll -351px -39px transparent;
+}
+.universal-header .events {
+    display: inline-block;
+    padding: 0;
+    position: relative;
+}
+.universal-header ul {
+    display: none;
+    position: absolute;
+    top: 29px;
+    left: 29px;
+    background: #000;
+    z-index: 10000;
+    width: 120px; 
+	list-style: none outside none;
+	margin:0; padding:0;	 
+}
+.universal-header ul a {
+      display: block;
+      padding: 5px 0 5px 10px;
+      border-right: none;
+      float: none;
+	  color:white;
+	  text-indent:inherit;
+	  margin:0;
+	  width:110px !important;
+	  height:auto;
+	  background-image:none !important;
+}
+.universal-header ul a:hover, .universal-header-for-mobile ul a:hover, .universal-header-for-mobile:hover > a {
+	color:#dadada; 
+	text-shadow: 0 0 5px #fff;
+}
+/* mobile css */
+.universal-header-for-mobile a {
+	line-height:30px;
+	padding-left:15px;
+	color:white;
+}
+.universal-header-for-mobile ul {
+	display: none;
+    position: absolute;
+	background: #000;
+	z-index: 10000;
+	list-style: none outside none;		   		   
+    top: 29px;
+    width: 100%; 
+	margin:0; padding:0;	 
+}
+.universal-header-for-mobile ul a {
+    display: block;
+    padding: 5px 0 5px 15px;
+    float: none;
+	color:white;
+	text-indent:inherit;
+	margin:0;
+	height:auto;
+	text-decoration:none;
+}
+/* tablet settings */
+@media screen and (max-width: 780px)   
+{
+.universal-header .events {
+	display:none;	
+	}
+}
+/* mobile settings */
+@media screen and (max-width: 320px)   
+{
+.universal-header {
+	display:none;	
+	}
+.universal-header-for-mobile {
+	display:block;
+	cursor:pointer;
+	}	
+}
+#nextGenContainer #main {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    padding: 0 !important;
+}
+#registrationForm {
+    border-top: 0 none !important;
+}
+#ngLoadingScreen.embedded {
+    -moz-box-sizing: content-box;
+}
+#LoginForm ul.loginMessages {
+    color: #FF0000;
+    list-style: none outside none;
+    max-width: 300px;
+    padding: 0;
+}
