@@ -55,13 +55,13 @@ hardware: Some schematics of the hardware to build the ESC.
 
 Try to raise an issue in this repository, so that some common questions get answered. But I consider this thing done and dusted, I'm moving on.
 
-## So... are there opensource FOC ESC's being created?
+## Is anyone making one right now?
 
-There are some projects online that you can look for. By my knowledge, the one posting the most information are from 2 sources:
+By my knowledge this project is pretty active. It's a bit focused towards higher power ESC (so maybe not immediately useful for quads), but for wings and skateboards, should be good:
 
 http://vedder.se/
 
-and through this blog over here:
+I learned from this blog here too:
 
 http://scolton.blogspot.com.br/p/motor-controllers.html
 
