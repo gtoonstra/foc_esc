@@ -54,3 +54,20 @@ hardware: Some schematics of the hardware to build the ESC.
 ## Can I ask questions?
 
 Try to raise an issue in this repository, so that some common questions get answered. But I consider this thing done and dusted, I'm moving on.
+
+## So... are there opensource FOC ESC's being created?
+
+There are some projects online that you can look for. By my knowledge, the one posting the most information are from 2 sources:
+
+http://vedder.se/
+
+and through this blog over here:
+
+http://scolton.blogspot.com.br/p/motor-controllers.html
+
+There are other ESC's to look at:
+
+- pxESC (has CAN implementation!)
+- ESC32
+
+There also exist some ESC's that are not widely known at all, mostly home-built electronics projects.
